@@ -409,4 +409,41 @@ body {
   color: white;
   font-weight: 900;
 }
+.about-content {
+  color: #4b4949;
+  padding: 20px 20px 20px 0px;
+}
+.btng {
+  background-image: linear-gradient(#e53e8e, #292391);
+  border-color: #c93a8f;
+  border-radius: 7px;
+}
+.para {
+  padding: 0 3rem;
+}
+.paragraph {
+  padding: 9rem 0;
+}
 /* ===========About us page end========= */
+/* ============Email Marketing start=============== */
+.sevicehero {
+  padding: 19rem 0;
+}
+.sevicehero h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.emailimg {
+  position: absolute;
+  /* margin: 10rem; */
+  /* margin-bottom: 0; */
+  bottom: 19px;
+  left: 173px;
+}
+.emailimg img {
+  max-width: 73%;
+}
+.emailtabs {
+  position: relative;
+}
+/* ============Email Marketing end=============== */
