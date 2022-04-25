@@ -1,0 +1,35 @@
+.service-card img {
+    max-width: 6rem;
+}
+
+.service-card {
+    text-align: center;
+    align-items: center;
+}
+
+.service-card p {
+    color: rgb(112 105 105);
+}
+
+.service-card button {
+    padding: 0.3rem 2rem 0.3rem 2rem;
+    background-image: linear-gradient(rgb(8, 18, 155), rgb(214, 44, 172));
+
+}
+
+.service-card:hover {
+    background-image: linear-gradient(rgb(8, 18, 155), rgb(214, 44, 172));
+    color: white;
+
+}
+
+.service-card:hover p {
+    color: white;
+}
+
+.service-card:hover button {
+    background-color: rgb(8, 18, 155) !important;
+    background-image: none;
+}
+
+.service-banner {}
