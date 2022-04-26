@@ -4,19 +4,24 @@
   padding: 0;
   font-family: "Poppins";
 }
+
 body {
   margin: 0 auto;
   overflow-x: hidden;
 }
+
 .fw-bold {
   font-weight: 900 !important;
 }
+
 .text-primary {
   color: #004080 !important;
 }
+
 .btn-primary {
   background-color: #004080 !important;
 }
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -27,6 +32,7 @@ body {
     max-width: 1261px;
   }
 }
+
 /* navbar start */
 #navbar {
   background: transparent;
@@ -35,28 +41,35 @@ body {
   z-index: 1;
   top: 0;
 }
+
 .navbar-nav {
   margin-right: 0 !important;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0.5rem 2rem;
   color: white;
 }
+
 /* navbar end
  */
 .hero {
   background-image: linear-gradient(to left, #dc3545, #2d44aa);
 }
+
 .curved-main {
   transform: translate(-64px, 95px);
   max-width: 105%;
 }
+
 .main {
   padding-top: 9rem;
 }
+
 .main h1 {
   line-height: 4rem;
 }
+
 .mainimg {
   position: relative;
 }
@@ -67,13 +80,15 @@ body {
   left: 1rem;
   max-width: 97%;
 }
+
 /* Feature start */
 .card {
-  box-shadow: 0px 9px 25px 0px rgba(93, 90, 141, 0.199);
-  -webkit-box-shadow: 0px 9px 25px 0px rgba(90, 104, 141, 0.267);
-  -moz-box-shadow: 0px 9px 25px 0px rgba(90, 106, 141, 0.26);
+  box-shadow: 0px 1px 8px 0px rgb(90 104 141 / 27%);
+  -webkit-box-shadow: 0px 1px 8px 0px rgb(90 104 141 / 27%);
+  -moz-box-shadow: 0px 1px 8px 0px rgb(90 104 141 / 27%);
   border: none;
 }
+
 .feature-box-wrapper {
   padding: 45px 40px;
   background: #fff;
@@ -81,6 +96,7 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
+
 .feature-box-wrapper .feature-box-thumb:before {
   background: linear-gradient(-215deg, #292391 4%, #e53e8e 96%) !important;
   content: "";
@@ -103,14 +119,17 @@ body {
   max-width: 56%;
   padding-left: 125px;
 }
+
 .feature-box-wrapper:hover.feature-box-thumb {
   transform: rotateY(360deg);
 }
+
 /* Feature end */
 /* services start */
 .title-separator.separator-border {
   background-color: #292391;
 }
+
 .title-separator.separator-border:before,
 .title-separator.separator-border:after {
   content: "";
@@ -121,10 +140,12 @@ body {
   left: 39px;
   opacity: 0.8;
 }
+
 .title-separator.separator-border:after,
 .title-separator.separator-border:before {
   background-color: #e53e8e;
 }
+
 .title-separator.separator-border:after {
   left: 16px;
   width: 14px;
@@ -137,24 +158,29 @@ body {
 .get-consultaion {
   padding-left: 3rem;
 }
+
 .btn-outline-danger {
   color: #e53e8e;
   border-color: #e53e8e;
 }
+
 .btn-outline-danger:hover {
   color: #fff;
   background-image: linear-gradient(#e53e8e, #292391);
   border-color: #e53e8e;
 }
+
 .gfc {
   position: relative;
 }
+
 .gfc img {
   position: absolute;
   top: -60px;
   left: -71px;
   max-width: 12%;
 }
+
 /* get consultation end */
 /* SEO Agencies start */
 .main-card {
@@ -163,11 +189,13 @@ body {
   background: #004080;
   color: white;
 }
+
 .main-card:hover {
   background: #804d00;
 
   transition: all 0.5s ease;
 }
+
 .main-card :before {
   background-image: url("https://demo.zozothemes.com/seoaal/wp-content/themes/seoaal/assets/images/theme-light.jpg");
   position: absolute;
@@ -189,6 +217,7 @@ body {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
 }
+
 .main-card:hover:before {
   transform: scale(1, 1);
 }
@@ -197,6 +226,7 @@ body {
 .seo-wrapper {
   position: relative;
 }
+
 .contact-form-wrapper {
   padding: 40px 40px 10px;
   margin: 0 130px 0 0;
@@ -207,6 +237,7 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
+
 .contact-form-wrapper:before {
   background-image: url("https://demo.zozothemes.com/seoaal/wp-content/themes/seoaal/assets/images/launch.png");
   content: "";
@@ -217,6 +248,7 @@ body {
   top: 60px;
   animation: verticalMove 3.5s infinite;
 }
+
 .contact-form-wrapper .contact-form input {
   border-bottom: 1px solid #a5a8ac;
   border-left: none;
@@ -230,16 +262,20 @@ body {
   padding: 6px 0;
   margin: 25px 0;
 }
+
 .contact-form {
   margin: 2rem 0;
 }
+
 .progress {
   height: 0.4rem;
   background-color: #dfe3e6;
 }
+
 .progress-bar {
   background-color: #004080;
 }
+
 .prog {
   height: 2.5rem;
   width: 2.5rem;
@@ -251,6 +287,7 @@ body {
   padding: 9px 0;
   font-size: 0.8rem;
 }
+
 .claint-say {
   position: relative;
 }
@@ -266,6 +303,7 @@ body {
   -moz-border-radius: 5px !important;
   position: relative;
 }
+
 .testimonals:before {
   background-image: url("https://demo.zozothemes.com/seoaal/wp-content/themes/seoaal/assets/images/quotation-sign-lt.png");
   content: "";
@@ -294,24 +332,28 @@ body {
   padding: 32px 35px 30px;
   border-bottom: 1px solid #eee;
 }
+
 .testimonial-excerpt {
   padding: 0 30px;
 }
+
 .testm {
   color: gray;
 }
-/* clent says end */
 
+/* clent says end */
 /* Footer start */
 .footer {
   position: relative;
   margin-top: 8rem;
   background: linear-gradient(-215deg, #e53e8e 5%, #292391 95%);
 }
+
 .footerimg {
   transform: translate(-64px, -100px);
   max-width: 105%;
 }
+
 .newslatter {
   position: absolute;
   padding: 2rem;
@@ -322,55 +364,68 @@ body {
   box-shadow: rgb(0 0 0 / 24%) 1px 1px 8px;
   border-radius: 20px;
 }
+
 .newslatterinput {
   border-radius: 20px;
 }
+
 .newslatterinput:focus {
   outline: none !important;
   z-index: 0 !important;
   box-shadow: none !important;
 }
+
 .input-group-text {
   border-radius: 20px;
   transform: translateX(-33px);
 }
+
 .footer-content {
   padding: 1rem 6rem;
 }
+
 .adrr {
   font-size: 13px;
   color: rgb(233, 227, 227);
 }
+
 .icon {
   margin: 0 1rem;
   width: 1rem;
 }
+
 .socialicon i {
   color: #fff;
   margin: 0 0.5rem;
   font-size: 24px;
 }
+
 .implink {
   list-style: none;
   padding-left: 0;
 }
+
 .implink li {
   margin: 1rem 0;
 }
+
 .implink li a {
   text-decoration: none;
   color: #e9e3e3;
   font-size: 14px;
 }
+
 .bottom-footer {
   background-color: #004080;
 }
+
 /* Footer end */
 /* ===========About us page start========= */
 .head {
   padding-top: 10rem !important;
   padding-bottom: 14rem !important;
 }
+
 .head h2 {
   color: white;
   font-weight: 900;
