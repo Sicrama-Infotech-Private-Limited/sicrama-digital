@@ -13,12 +13,12 @@
 
 .service-card button {
     padding: 0.3rem 2rem 0.3rem 2rem;
-    background-image: linear-gradient(rgb(8, 18, 155), rgb(214, 44, 172));
+    background-image: linear-gradient(rgba(41, 35, 145, 255), rgba(229, 62, 142, 255));
 
 }
 
 .service-card:hover {
-    background-image: linear-gradient(rgb(8, 18, 155), rgb(214, 44, 172));
+    background-image: linear-gradient(rgba(41, 35, 145, 255), rgba(229, 62, 142, 255));
     color: white;
 
 }
@@ -28,8 +28,19 @@
 }
 
 .service-card:hover button {
-    background-color: rgb(8, 18, 155) !important;
+    background-color: rgba(41, 35, 145, 255) !important;
     background-image: none;
 }
 
-.service-banner {}
+.banner-btn {
+    padding: 0.8rem;
+    background-image: linear-gradient(rgba(41, 35, 145, 255), rgba(229, 62, 142, 255));
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+.party-img {
+    padding: 7rem;
+    margin-top: -160px;
+}
