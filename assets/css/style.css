@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   padding: 0;
@@ -121,10 +121,12 @@ body {
   padding-left: 125px;
 }
 
-.feature-box-wrapper:hover.feature-box-thumb {
-  transform: rotateY(360deg);
+.feature-box-wrapper:hover .feature-box-thumb {
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: rotateY(180deg);
 }
 
+/* 
 /* Feature end */
 /* services start */
 .title-separator.separator-border {
@@ -198,9 +200,6 @@ body {
 }
 
 .main-card :before {
-  background-image: url("https://demo.zozothemes.com/seoaal/wp-content/themes/seoaal/assets/images/theme-light.jpg");
-  position: absolute;
-  content: "";
   width: 100%;
   height: 100%;
   left: 0;
@@ -240,14 +239,28 @@ body {
 }
 
 .contact-form-wrapper:before {
-  background-image: url("https://demo.zozothemes.com/seoaal/wp-content/themes/seoaal/assets/images/launch.png");
+  background-image: url("../images/launch.png");
   content: "";
   position: absolute;
   width: 92px;
   height: 182px;
   right: 18px;
   top: 60px;
-  animation: verticalMove 3.5s infinite;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .contact-form-wrapper .contact-form input {
@@ -343,8 +356,6 @@ body {
 }
 
 /* clent says end */
-
-
 /* Footer start */
 .footer {
   position: relative;
@@ -389,7 +400,7 @@ body {
 
 .adrr {
   font-size: 13px;
-  color: rgb(233, 227, 227);
+  color: #fff;
 }
 
 .icon {
@@ -414,7 +425,7 @@ body {
 
 .implink li a {
   text-decoration: none;
-  color: #e9e3e3;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -424,6 +435,18 @@ body {
 
 /* Footer end */
 /* ===========About us page start========= */
+.pages {
+  background: url("../images/bg-page.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutcontent {
+  background: url("../images/about-3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .head {
   padding-top: 10rem !important;
   padding-bottom: 14rem !important;
@@ -434,7 +457,6 @@ body {
   font-weight: 900;
 }
 
-/* ===========About us page end========= */
 .about-content {
   color: #4b4949;
   padding: 20px 20px 20px 0px;
@@ -553,6 +575,10 @@ body {
   background: rgb(9 60 103);
 }
 
+.widget-area .widget.widget_nav_menu .menu-services-menu-container li.active a {
+  background: rgba(229, 62, 142, 0.6);
+}
+
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:before {
   right: 15px;
   position: absolute;
@@ -577,6 +603,19 @@ body {
   color: #fff;
   background-color: #e53e8e;
   border-color: #e53e8e;
+}
+
+.servicsbg {
+  background: url("../images/service-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.layerbg {
+  background-image: linear-gradient(rgba(7, 7, 7, 0.582), rgba(7, 7, 7, 0.527)),
+    url("../images/emailaside.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ============Email Marketing end=============== */
