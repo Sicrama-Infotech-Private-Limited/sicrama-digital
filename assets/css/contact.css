@@ -18,3 +18,10 @@
     color: white;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .office {
+        margin-top: 1rem;
+        margin-bottom: -100px !important;
+    }
+}

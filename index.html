@@ -33,6 +33,7 @@
   <!-- custom css -->
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/index.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -184,7 +185,7 @@
   <!-- Services section start -->
   <section class="services my-5 py-5" id="services">
     <div class="container">
-      <div class="row">
+      <div class="row counter-up">
         <div class="col-md-6" style="position: relative;">
           <div class="heading">
             <h3 class="fw-bold">We Provide All Digital Marketing Services</h3>
@@ -200,11 +201,11 @@
           </div>
           <div class="d-flex mt-5">
             <div class="flexbox">
-              <h1 class="fw-bold display-4 text-primary">1116<sup style="color:#e53e8e">+</sup></h1>
+              <h1 class="counter fw-bold display-4 text-primary">1116<sup style="color:#e53e8e">+</sup></h1>
               <p>Project Completed</p>
             </div>
             <div class="flexbox" style="margin-left: 5rem;">
-              <h1 class="fw-bold display-4 text-primary ml-4">116<sup style="color:#e53e8e">k</sup></h1>
+              <h1 class="counter fw-bold display-4 text-primary ml-4">116<sup style="color:#e53e8e">k</sup></h1>
               <p>Satisfied Client</p>
             </div>
 
@@ -441,7 +442,7 @@
               incididunt ut
               labore et dolore</p>
             <div>
-              <button class="btn btn-outline-danger px-4 py-3">Get In Touch</button>
+              <a href="contact.html"><button class="btn btn-outline-danger px-4 py-3">Get In Touch</button></a>
             </div>
 
           </div>
@@ -603,7 +604,7 @@
       <img src="assets/images/Path 455.png" class="img-fluid footerimg">
       <div class="newslatter text-center">
         <h3 class=" fw-bold">Newsletter Sign Up</h3>
-        <p class="py-3">Subscribe our newsletter to getr latest news about our new product and product campaign.</p>
+        <p class="py-3">Subscribe our newsletter to get latest news about our new product and product campaign.</p>
 
         <div class="input-group mb-3 px-5">
           <input type="text" class="form-control newslatterinput " placeholder="Your Email Address"
@@ -716,8 +717,25 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/carosual.js"></script>
+  <script src="jquery.counterup.min.js"></script>
 
 
+  <!-- <script>
+    jQuery(document).ready(function () {
+      $('.counter').counterup({
+        delay: 10,
+        time: 1000
+      });
+    });  
+  </script> -->
+  <script>
+    $(document).ready(function () {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1200
+      });
+    });
+  </script>
 
 </body>
 

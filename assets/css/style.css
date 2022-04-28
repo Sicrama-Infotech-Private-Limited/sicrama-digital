@@ -23,6 +23,7 @@ body {
 }
 
 @media (min-width: 1400px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -588,12 +589,7 @@ body {
   color: #fff;
 }
 
-.widget-area
-  .widget.widget_nav_menu
-  .menu-services-menu-container
-  ul.menu
-  li.current-menu-item
-  a,
+.widget-area .widget.widget_nav_menu .menu-services-menu-container ul.menu li.current-menu-item a,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:hover,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:active,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:focus {
@@ -624,12 +620,29 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .widget .title-separator.separator-border:before,
 .widget .title-separator.separator-border:after {
   left: 55px;
 }
+
 .widget .title-separator.separator-border:after {
   left: 33px;
 }
 
-/* ============Email Marketing end=============== */ ;
+/* ============Email Marketing end=============== */
+
+
+
+
+@media screen and (max-width: 600px) {
+  .aboutcontent {
+
+    background: none;
+
+  }
+
+  .paragraph {
+    padding-top: 0;
+  }
+}
