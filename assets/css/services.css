@@ -1,46 +1,64 @@
 .service-card img {
-    max-width: 6rem;
+  max-width: 6rem;
 }
 
 .service-card {
-    text-align: center;
-    align-items: center;
+  text-align: center;
+  align-items: center;
 }
-
+.white {
+  display: none;
+}
+.service-card .card-body {
+  padding: 1.5rem 2rem;
+}
 .service-card p {
-    color: rgb(112 105 105);
+  color: rgb(112 105 105);
 }
 
 .service-card button {
-    padding: 0.3rem 2rem 0.3rem 2rem;
-    background-image: linear-gradient(rgba(41, 35, 145, 255), rgba(229, 62, 142, 255));
-
+  padding: 0.3rem 2rem 0.3rem 2rem;
+  background-image: linear-gradient(
+    rgba(41, 35, 145, 255),
+    rgba(229, 62, 142, 255)
+  );
 }
 
 .service-card:hover {
-    background-image: linear-gradient(rgba(41, 35, 145, 255), rgba(229, 62, 142, 255));
-    color: white;
-
+  background-image: linear-gradient(
+    rgba(41, 35, 145, 255),
+    rgba(229, 62, 142, 255)
+  );
+  color: white;
 }
-
+.service-card:hover .black {
+  display: none;
+}
+.service-card:hover .white {
+  display: block;
+  margin-left: 4rem;
+}
 .service-card:hover p {
-    color: white;
+  color: white;
 }
 
 .service-card:hover button {
-    background-color: rgba(41, 35, 145, 255) !important;
-    background-image: none;
+  background-color: rgba(41, 35, 145, 255) !important;
+  background-image: none;
 }
 
 .banner-btn {
-    padding: 0.8rem;
-    background-image: linear-gradient(rgba(41, 35, 145, 255), rgba(229, 62, 142, 255));
-    color: white;
-    border-radius: 8px;
-    border: none;
+  padding: 0.8rem;
+  background-image: linear-gradient(
+    rgba(41, 35, 145, 255),
+    rgba(229, 62, 142, 255)
+  );
+  color: white;
+  border-radius: 8px;
+  border: none;
 }
 
 .party-img {
-    padding: 7rem;
-    margin-top: -160px;
+  padding: 7rem;
+  margin-top: -160px;
 }
