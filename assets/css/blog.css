@@ -1,0 +1,31 @@
+.blog-card {
+    padding: 0px 0px;
+}
+
+.blog-btn {
+    color: #004080;
+    border: none;
+    background-color: white;
+}
+
+.blog-btn:focus {
+    outline: none;
+}
+
+.zoom:hover {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    transform: scale(1.02);
+}
+
+.small-blog1 {
+    margin-left: 7rem;
+    margin-top: -4rem;
+    color: #004080;
+    font-weight: bold;
+
+}
+
+.small-blog {
+    margin-bottom: 1rem;
+}
