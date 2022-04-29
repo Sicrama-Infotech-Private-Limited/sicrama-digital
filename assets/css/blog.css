@@ -26,6 +26,15 @@
 
 }
 
+.sm-blogimg {
+
+    max-width: 35%;
+    margin-bottom: 1rem;
+
+}
+
 .small-blog {
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 600px) {}
