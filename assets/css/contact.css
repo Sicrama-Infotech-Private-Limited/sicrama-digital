@@ -1,20 +1,29 @@
 .submit-btn {
-    padding: 0.6rem;
-    color: white;
-    background-color: #004080;
-    border: none;
-    border-radius: 5px;
+  padding: 0.6rem;
+  color: white;
+  background-color: #004080;
+  border: none;
+  border-radius: 5px;
 }
-
+.cwhite {
+  display: none;
+}
 .contact-card {
-    background-image: url("../images/bg-card.png");
-    background-repeat: no-repeat;
-    background-position: bottom 40px right 144px;
+  background-image: url("../images/bg-card.png");
+  background-repeat: no-repeat;
+  background-position: bottom 40px right 144px;
+  height: 90%;
 }
 
 .contact-card:hover {
-    background-color: rgba(229, 62, 142, 255);
-    background-image: none;
-    color: white;
-
+  background-color: rgba(229, 62, 142, 255);
+  background-image: none;
+  color: white;
+}
+.contact-card:hover .cwhite {
+  display: block;
+  margin-left: 5rem;
+}
+.contact-card:hover .cblack {
+  display: none;
 }
