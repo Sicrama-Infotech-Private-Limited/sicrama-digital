@@ -5,39 +5,42 @@
 .service-card {
   text-align: center;
   align-items: center;
+  height: 95%;
 }
+
 .white {
   display: none;
 }
+
 .service-card .card-body {
   padding: 1.5rem 2rem;
 }
+
 .service-card p {
   color: rgb(112 105 105);
 }
 
 .service-card button {
   padding: 0.3rem 2rem 0.3rem 2rem;
-  background-image: linear-gradient(
-    rgba(41, 35, 145, 255),
-    rgba(229, 62, 142, 255)
-  );
+  background-image: linear-gradient(rgba(41, 35, 145, 255),
+      rgba(229, 62, 142, 255));
 }
 
 .service-card:hover {
-  background-image: linear-gradient(
-    rgba(41, 35, 145, 255),
-    rgba(229, 62, 142, 255)
-  );
+  background-image: linear-gradient(rgba(41, 35, 145, 255),
+      rgba(229, 62, 142, 255));
   color: white;
 }
+
 .service-card:hover .black {
   display: none;
 }
+
 .service-card:hover .white {
   display: block;
   margin-left: 4rem;
 }
+
 .service-card:hover p {
   color: white;
 }
@@ -49,10 +52,8 @@
 
 .banner-btn {
   padding: 0.8rem;
-  background-image: linear-gradient(
-    rgba(41, 35, 145, 255),
-    rgba(229, 62, 142, 255)
-  );
+  background-image: linear-gradient(rgba(41, 35, 145, 255),
+      rgba(229, 62, 142, 255));
   color: white;
   border-radius: 8px;
   border: none;
@@ -61,4 +62,25 @@
 .party-img {
   padding: 7rem;
   margin-top: -160px;
+}
+
+.service-banner {
+  padding: 8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .service-banner {
+    padding: 2rem;
+  }
+
+  .party-img {
+    padding: 0.5rem;
+    max-width: 100%;
+    margin-bottom: 5rem;
+    margin-top: -10px;
+  }
+
+  .count {
+    text-align: center;
+  }
 }

@@ -26,4 +26,15 @@
 }
 .contact-card:hover .cblack {
   display: none;
+
+  background-color: rgba(229, 62, 142, 255);
+  background-image: none;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .office {
+    margin-top: 1rem;
+    margin-bottom: -100px !important;
+  }
 }
