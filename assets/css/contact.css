@@ -31,3 +31,9 @@
 .contact-card:hover .cblack {
   display: none;
 }
+
+@media screen and (max-width: 600px) {
+  .office {
+    margin-top: 2rem;
+  }
+}
