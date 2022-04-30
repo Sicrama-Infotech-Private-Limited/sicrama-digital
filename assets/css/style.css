@@ -80,9 +80,82 @@ body {
   top: -3rem;
   left: 1rem;
   max-width: 92%;
-  animation: float 7s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
 }
+.circle1 {
+  right: 2rem;
+  top: 4rem;
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background-color: #d99b00;
+  border-radius: 50%;
+  animation: bounce 5s ease-in-out infinite;
+}
+.circle2 {
+  right: 3rem;
+  top: 2.3rem;
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #394dc5;
+  border-radius: 50%;
+  animation: bounce1 5s ease-in-out infinite;
+}
+.circle3 {
+  right: 2rem;
+  bottom: -9rem;
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #3bb6e3;
+  z-index: 1;
+  border-radius: 50%;
+  animation: bounce1 5s ease-in-out infinite;
+}
+.circle4 {
+  right: 2rem;
+  bottom: -11rem;
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background-color: #f78da7;
+  z-index: 1;
+  border-radius: 50%;
+  animation: bounce 5s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    width: 1rem;
+    height: 1rem;
+  }
 
+  50% {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  100% {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@keyframes bounce1 {
+  0% {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  50% {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  100% {
+    width: 1rem;
+    height: 1rem;
+  }
+}
 /* Feature start */
 .card {
   box-shadow: 0px 1px 8px 0px rgb(90 104 141 / 27%);
@@ -194,13 +267,13 @@ body {
   color: white;
 }
 
-.main-card:hover {
+/* .main-card:hover {
   background: #804d00;
-  transform: scale(1);
+  transform: scale(0, 0);
   /* transition: all 0.5s ease; */
-}
 
 .main-card:before {
+  background: url("../images/theme-light.jpg");
   width: 100%;
   height: 100%;
   left: 0;
@@ -219,9 +292,33 @@ body {
   -moz-transition: all 0.5s ease;
 }
 
-.main-card:hover:before {
-  transform: scale(1, 1);
+/* .main-card:hover {
+  background: white;
+  color: black;
+} */
+
+.main-card:hover {
+  background: url("../images/theme-light.jpg");
+
+  color: #004080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease-out;
 }
+/* .main-card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+.overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+
+  background: url("../images/theme-light.jpg");
+  top: 70px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+} */
 
 /* SEO Agencies end */
 .seo-wrapper {
@@ -298,15 +395,31 @@ body {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
-  left: 80%;
+
   padding: 9px 0;
   font-size: 0.8rem;
-  transition: width 1s linear;
+  left: 80%;
+  transition: all 1s linear;
   -webkit-transition: width 1s linear;
 }
+/* .progress:hover .prog {
+  left: 80%;
+  transition: all 1s linear;
+} */
 
 .claint-say {
   position: relative;
+}
+.sub-title {
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1.7em;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  color: #f1f1f1;
+  top: -50px;
+  z-index: -1;
 }
 
 /* client says */
