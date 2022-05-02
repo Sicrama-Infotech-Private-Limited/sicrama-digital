@@ -27,12 +27,16 @@
     <!--owl.carousel  -->
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <!-- fontawesome -->
-    <link href="assets/vendor/fontawesome/fontawesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css -->
     <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
+    <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-angle-up"></i></button>
     <!-- Navbar start -->
     <section id="navbar">
         <div class="container">
@@ -194,19 +198,18 @@
                         <div class="widget">
                             <img src="assets/images/ppc-2.webp" class="img-fluid" />
                             <div class="my-4">
-                                <h4 class="fw-bold">Improve Your Business By Email Marketing</h4>
+                                <h4 class="fw-bold">Promote your Business with Pay Per Click</h4>
                                 <span class="title-separator separator-border theme-color-bg"></span>
                             </div>
                             <p style="color:#363535">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                Sicrama Digital offers excellent Pay Per Click (PPC) advertising options. PPC services
+                                get your quicker entry, easy to measure and track-able results. This strategy also works
+                                incredibly well with other marketing channels and also provides a plethora of useful
+                                user data.
                             </p>
                             <p style="color:#363535">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                Using PPC tactics can help you to realize your business goals faster, gives you optimal
+                                control over default campaign settings and incredible targeting options.
                             </p>
 
                         </div>
@@ -215,7 +218,7 @@
                     <div class="widget-area">
                         <div class="widget">
                             <div class="my-4">
-                                <h4 class="fw-bold">We are here to provide help</h4>
+                                <h4 class="fw-bold">Here’s how we can help</h4>
                                 <span class="title-separator separator-border theme-color-bg"></span>
                             </div>
                             <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-touch="false"
@@ -244,13 +247,13 @@
                                         <div class="card main-card">
 
                                             <div class="card-header text-center ">
-                                                <h3>Social Media Marketing (SMO)</h3>
+                                                <h3>Pay Per Click Services </h3>
                                             </div>
                                             <div class="card-body">
                                                 <h6 class="card-subtitle1 mb-4">About</h6>
-                                                <p class="card-text1 mb-5">Some quick example text to build on the card
-                                                    title and make up the bulk of the
-                                                    card's content.</p>
+                                                <p class="card-text1 mb-5">Sicrama Digital offers the most advantageous
+                                                    Pay Per Click (PPC) marketing techniques to ensure that you achieve
+                                                    your business goals faster and with more efficiency. </p>
                                                 <a href="#" class="card-link text-light text-decoration-none">Read More
                                                     -></a>
 
@@ -296,22 +299,16 @@
                             </div>
                             <div>
                                 <div class="my-4">
-                                    <h4 class="fw-bold">Planning & Sratagy</h4>
+                                    <h4 class="fw-bold">Planning & Strategy </h4>
                                     <span class="title-separator separator-border theme-color-bg"></span>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <p class="mt-2" style="color:#363535; font-size: 14px">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard
-                                            dummy text ever since the 1500s, when an unknown printer took a galley of
-
-                                        </p>
-                                        <p style="color:#363535; font-size: 14px">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard
-
-
+                                            Sicrama Digital is the top company when it comes to developing online
+                                            marketing plans and strategies. Our extensive experience and inherent
+                                            expertise ensure that we develop only the most effective and result-oriented
+                                            online marketing strategies.
                                         </p>
 
                                     </div>
@@ -459,6 +456,25 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
 
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
 

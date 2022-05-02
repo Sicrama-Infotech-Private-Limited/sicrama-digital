@@ -36,6 +36,8 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-angle-up"></i></button>
     <!-- Navbar start -->
     <section id="navbar">
         <div class="container">
@@ -104,7 +106,7 @@
                                 <img src="assets/images/locationwhite.webp" style="padding: 2rem; max-width: 46%;"
                                     class="img-fluid cwhite">
                                 <h6><b>Address</b></h6>
-                                <h6>Sicrama infotech, Nagpur</h6>
+                                <h6>Sicrama infotech, Hingna Road, Nagpur, Maharashtra, India - 440036</h6>
                             </div>
                         </div>
                     </div>
@@ -337,6 +339,25 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
 
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
 </body>

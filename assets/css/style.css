@@ -332,6 +332,7 @@ body {
 /* SEO Agencies end */
 .seo-wrapper {
   position: relative;
+
 }
 
 .contact-form-wrapper {
@@ -761,6 +762,30 @@ body {
 
 /* ============Email Marketing end=============== */
 
+
+/*scroller*/
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 11px;
+  border-radius: 61%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(#dc3545, #2d44aa);
+  transition: all 5s ease-in-out infinite;
+}
+
+/*scroller end*/
+
 @media screen and (max-width: 600px) {
   .aboutcontent {
     background: none;
@@ -804,7 +829,7 @@ body {
     height: 182px;
     right: 18px;
     top: 154px;
-    left: 233px;
+    left: 225px;
     animation: float 5s ease-in-out infinite;
   }
 
@@ -816,4 +841,55 @@ body {
     padding-left: 0rem !important;
   }
 
+  .get-consultaion {
+    padding-left: 0rem;
+    text-align: center;
+  }
+
+  .seo-wrapper {
+    padding: 20px;
+  }
+
+  .paddingcls {
+    padding: 20px;
+  }
+}
+
+@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+  .contact-form-wrapper:before {
+    left: 285px;
+  }
+
+  .get-consultaion {
+    padding-left: 0rem;
+    text-align: center;
+  }
+
+  .feature-box-wrapper .feature-box-thumb img {
+    padding: 30px 0px;
+    position: relative;
+    max-width: 50%;
+    padding-left: 92px;
+    margin-left: 30px;
+  }
+
+  .seo-wrapper {
+    padding: 20px;
+  }
+
+  .paddingcls {
+    padding: 20px;
+  }
+
+
+}
+
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 2) {
+  .contact-form-wrapper:before {
+    left: 277px;
+  }
+
+  .feature-box-wrapper .feature-box-thumb img {
+    padding-left: 116px;
+  }
 }

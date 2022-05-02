@@ -36,6 +36,8 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-angle-up"></i></button>
     <!-- Navbar start -->
     <section id="navbar">
         <div class="container">
@@ -98,7 +100,7 @@
     <!-- main start -->
     <section>
         <div class="container">
-            <div class="row my-5 py-3">
+            <div class="row my-5 py-3 align-items-center">
                 <h3 class="fw-bold text-center">
                     We Provide You the Best
                 </h3>
@@ -514,6 +516,25 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
 
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
 </body>
