@@ -6,9 +6,13 @@ $(document).ready(function () {
     if (scroll > 80) {
       $("#navbar").css("background", "white");
       $(".nav-link").css("color", "#004080");
+      $(".logoblue").css("display", "block");
+      $(".logowhite").css("display", "none");
     } else {
       $("#navbar").css("background", "transparent");
       $(".nav-link").css("color", "white");
+      $(".logoblue").css("display", "none");
+      $(".logowhite").css("display", "block");
     }
   });
 });

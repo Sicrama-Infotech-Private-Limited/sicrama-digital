@@ -23,7 +23,6 @@ body {
 }
 
 @media (min-width: 1400px) {
-
   .container,
   .container-lg,
   .container-md,
@@ -39,7 +38,7 @@ body {
   background: transparent;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
   top: 0;
 }
 
@@ -51,7 +50,9 @@ body {
   padding: 0.5rem 2rem;
   color: white;
 }
-
+.logoblue {
+  display: none;
+}
 /* navbar end
  */
 .hero {
@@ -332,7 +333,6 @@ body {
 /* SEO Agencies end */
 .seo-wrapper {
   position: relative;
-
 }
 
 .contact-form-wrapper {
@@ -715,7 +715,12 @@ body {
   color: #fff;
 }
 
-.widget-area .widget.widget_nav_menu .menu-services-menu-container ul.menu li.current-menu-item a,
+.widget-area
+  .widget.widget_nav_menu
+  .menu-services-menu-container
+  ul.menu
+  li.current-menu-item
+  a,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:hover,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:active,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:focus {
@@ -761,7 +766,6 @@ body {
 }
 
 /* ============Email Marketing end=============== */
-
 
 /*scroller*/
 .myBtn {
@@ -820,17 +824,11 @@ body {
   .py-5 {
     padding-top: none !important;
   }
-
+  .contact-form-wrapper {
+    width: 100%;
+  }
   .contact-form-wrapper:before {
-    background-image: url(../images/launch.png);
-    content: "";
-    position: absolute;
-    width: 92px;
-    height: 182px;
-    right: 18px;
-    top: 154px;
-    left: 225px;
-    animation: float 5s ease-in-out infinite;
+    background: none !important;
   }
 
   .contact-form-wrapper {
@@ -853,9 +851,19 @@ body {
   .paddingcls {
     padding: 20px;
   }
+  .newslatter {
+    width: 100%;
+    left: 0%;
+  }
+  .newslatter .input-group {
+    padding: 0 !important;
+  }
+  .footer-content {
+    padding: 10rem 1rem;
+  }
 }
 
-@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   .contact-form-wrapper:before {
     left: 285px;
   }
@@ -880,11 +888,9 @@ body {
   .paddingcls {
     padding: 20px;
   }
-
-
 }
 
-@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 2) {
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 2) {
   .contact-form-wrapper:before {
     left: 277px;
   }
