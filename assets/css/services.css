@@ -83,4 +83,9 @@
   .count {
     text-align: center;
   }
+
+  .row {
+    margin-left: none !important;
+    margin-right: none !important;
+  }
 }

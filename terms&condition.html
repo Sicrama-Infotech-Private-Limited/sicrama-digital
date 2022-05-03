@@ -36,6 +36,8 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-angle-up"></i></button>
     <!-- Navbar start -->
     <section id="navbar">
         <div class="container">
@@ -156,7 +158,7 @@
             <img src="assets/images/Path 455.png" class="img-fluid footerimg">
             <div class="newslatter text-center">
                 <h3 class=" fw-bold">Newsletter Sign Up</h3>
-                <p class="py-3">Subscribe our newsletter to getr latest news about our new product and product campaign.
+                <p class="py-3">Subscribe our newsletter to get latest news about our new product and product campaign.
                 </p>
 
                 <div class="input-group mb-3 px-5">
@@ -179,7 +181,7 @@
                                     <img src="assets/images/pin.svg" class="img-fluid icon">
                                 </div>
                                 <p class=" adrr">Sicrama Infotech Pvt. Ltd.<br> Royal Rudra Building, <br>
-                                    Hingna Road,Nagpur <br>Maharashtra-440016</p>
+                                    Hingna Road, Nagpur <br>Maharashtra-440016</p>
 
                             </div>
                         </a>
@@ -197,7 +199,7 @@
                             <p class=" adrr">0712 352 4222</p>
 
                         </div>
-                        <div class="d-flex socialicon ">
+                        <div class="d-flex socialicon">
                             <i class='bx bxl-facebook'></i>
                             <i class='bx bxl-twitter'></i>
                             <i class='bx bxl-linkedin'></i>
@@ -205,7 +207,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 text-light">
-                        <h6>Important Links</h6>
+                        <h6><b>Important Links</b></h6>
                         <ul class="implink mt-4">
                             <li>
                                 <a href="index.html">Home</a>
@@ -219,11 +221,12 @@
                             <li>
                                 <a href="blog.html">Blog</a>
                             </li>
+
                         </ul>
 
                     </div>
                     <div class="col-md-4 text-light">
-                        <h6>Polices</h6>
+                        <h6>Policies</h6>
                         <ul class="implink mt-4">
                             <li>
                                 <a href="terms&condition.html">Terms and Condition</a>
@@ -242,9 +245,10 @@
         </div>
         <div class="bottom-footer">
             <div class="container">
-                <p class="text-light text-center py-3 mb-0">@2022 | All Rights Reserved| Designed & Developed By Sicrama
+                <p class="text-light text-center py-3 mb-0">@2022 | All Rights Reserved | Designed & Developed By
+                    Sicrama
                     Infotech
-                    Private Limited.|</p>
+                    Private Limited.</p>
             </div>
 
         </div>
@@ -269,6 +273,25 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
 
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
 </body>
