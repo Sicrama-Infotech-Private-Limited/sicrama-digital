@@ -280,13 +280,19 @@ body {
   color: white;
   height: 95%;
 }
+.main-card a {
+  color: white;
+}
 
+.main-card:hover a {
+  color: #004080;
+}
 /* .main-card:hover {
   background: #804d00;
   transform: scale(0, 0);
   /* transition: all 0.5s ease; */
 
-.main-card:before {
+/* .main-card:before {
   background: url("../images/theme-light.jpg");
   width: 100%;
   height: 100%;
@@ -304,21 +310,21 @@ body {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-}
+} */
 
 /* .main-card:hover {
   background: white;
   color: black;
 } */
 
-.main-card:hover {
+/* .main-card:hover {
   background: url("../images/theme-light.jpg");
 
   color: #004080;
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.3s ease-out;
-}
+} */
 
 /* .main-card:hover .overlay {
   transform: scale(4) translateZ(0);
