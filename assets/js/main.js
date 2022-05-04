@@ -1,19 +1,3 @@
-// carosual slider
-let items = document.querySelectorAll(".carousel .carousel-item");
-
-items.forEach((el) => {
-  const minPerSlide = 4;
-  let next = el.nextElementSibling;
-  for (var i = 1; i < minPerSlide; i++) {
-    if (!next) {
-      // wrap carousel by using first child
-      next = items[0];
-    }
-    let cloneChild = next.cloneNode(true);
-    el.appendChild(cloneChild.children[0]);
-    next = next.nextElementSibling;
-  }
-});
 // navbar color change
 
 $(document).ready(function () {
@@ -22,9 +6,13 @@ $(document).ready(function () {
     if (scroll > 80) {
       $("#navbar").css("background", "white");
       $(".nav-link").css("color", "#004080");
+      $(".logoblue").css("display", "block");
+      $(".logowhite").css("display", "none");
     } else {
       $("#navbar").css("background", "transparent");
       $(".nav-link").css("color", "white");
+      $(".logoblue").css("display", "none");
+      $(".logowhite").css("display", "block");
     }
   });
 });
