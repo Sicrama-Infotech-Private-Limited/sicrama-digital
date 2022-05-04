@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /*loader*/
-.loader {
+
+#loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -36,6 +37,7 @@
   }
 }
 
+/* Add animation to "page content" */
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -68,8 +70,9 @@
   }
 }
 
-.myDiv {
+#myDiv {
   display: none;
+
 }
 
 /*loader end*/
