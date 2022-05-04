@@ -33,6 +33,7 @@
     <!-- custom css -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/contact.css" rel="stylesheet" />
+    <link href="assets/css/hover-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,10 +44,10 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/sicramawhite.webp" class="img-fluid logowhite" style="max-width:75%" />
-                    <img src="assets/images/sicramablue.webp" class="img-fluid logoblue" style="max-width:75%" />
-                </a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/sicramawhite.webp" class="img-fluid logowhite" style="max-width:75%" />
+                        <img src="assets/images/sicramablue.webp" class="img-fluid logoblue" style="max-width:75%" />
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -102,10 +103,13 @@
                     <div class="card contact-card mt-5">
                         <div class="card-body">
                             <div class="p-2 m-3 text-center">
-                                <img src="assets/images/locationblack.webp" style="padding: 2rem; max-width: 46%;"
-                                    class="img-fluid  cblack">
-                                <img src="assets/images/locationwhite.webp" style="padding: 2rem; max-width: 46%;"
-                                    class="img-fluid cwhite">
+                                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ycw06la7.json"
+                                    background="transparent" speed="1" style="width: 20rem; height: 10rem;" loop
+                                    autoplay>
+                                </lottie-player>
+                                <!-- <img src="assets/images/locationblack.webp" style="padding: 2rem; max-width: 46%;"
+                                    class="img-fluid  cblack"> -->
+
                                 <h6><b>Address</b></h6>
                                 <h6>Sicrama infotech, Hingna Road, Nagpur, Maharashtra, India - 440036</h6>
                             </div>
@@ -116,13 +120,19 @@
                 <div class="col-md-4">
                     <div class="card contact-card mt-5">
                         <div class="card-body">
-                            <div class="p-2 m-3 text-center">
-                                <img src="assets/images/watchblack.webp" style="padding: 2rem; max-width: 46%;"
-                                    class="img-fluid  cblack">
-                                <img src="assets/images/watchwhite.webp" style="padding: 2rem; max-width: 46%;"
-                                    class="img-fluid cwhite">
-                                <h6><b>Opening Hours</b></h6>
-                                <h6>10:00AM - 07:00PM</h6>
+                            <div class=" m-3 text-center" style="padding-top:4rem">
+                                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_hcdtikus.json"
+                                    background="transparent" speed="1" style="width: 20rem; height: 3.5rem;" loop
+                                    autoplay>
+                                </lottie-player>
+
+                                <!-- <img src="assets/images/watchblack.webp" style="padding: 2rem; max-width: 46%;"
+                                    class="img-fluid  cblack"> -->
+                                <div class="mt-5">
+                                    <h6><b>Opening Hours</b></h6>
+                                    <h6>10:00AM - 07:00PM</h6>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -132,10 +142,11 @@
                     <div class="card contact-card mt-5">
                         <div class="card-body">
                             <div class="p-2 m-3 text-center">
-                                <img src="assets/images/phoneblack.webp" style="padding: 2rem; max-width: 46%;"
-                                    class="img-fluid  cblack">
-                                <img src="assets/images/phonewhite.webp" style="padding: 2rem; max-width: 46%;"
-                                    class="img-fluid cwhite">
+                                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_fa5ai28i.json"
+                                    background="transparent" speed="1" style="width: 20rem; height: 10rem;" loop
+                                    autoplay>
+                                </lottie-player>
+
                                 <h6><b>Contact Directly</b></h6>
                                 <h6>0712 356 4222</h6>
                             </div>
@@ -201,10 +212,12 @@
                     <h6 class="mb-3" style="margin-left: 1.2rem;">Hingna Road, Nagpur, Maharashtra, India - 440036</h6>
 
                     <h6 class="mb-3"><i class="fa-solid fa-envelope" style="color: #004080; font-size: 1.1rem;"></i>
-                        contact@sicramadigital.com</h6>
+                        <a href="mailto:contact@sicramadigital.com"
+                            class="text-decoration-none text-dark">contact@sicramadigital.com</a>
+                    </h6>
 
-                    <h6 class="mb-3"><i class="fa-solid fa-phone" style="color: #004080;font-size: 1.1rem;"></i> 0712
-                        356 4222</h6>
+                    <h6 class="mb-3"><i class="fa-solid fa-phone" style="color: #004080;font-size: 1.1rem;"></i> <a
+                            href="tel:07123564222" class="text-decoration-none text-dark">0712 356 4222</a></h6>
                     <h6>
                         <i class='bx bxs-alarm' style="color: #004080; font-size: 1.5rem;"></i>
                         Mon - Sat: 10:00am - 07:00pm
@@ -339,6 +352,7 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
     <script>

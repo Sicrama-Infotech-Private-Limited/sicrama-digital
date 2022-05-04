@@ -35,514 +35,536 @@
   <!-- custom css -->
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/index.css" rel="stylesheet" />
+  <link href="assets/css/hover-min.css" rel="stylesheet">
 
 </head>
 
-<body>
-  <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top"><i
-      class="fa-solid fa-angle-up"></i></button>
-  <!-- Navbar start -->
-  <section id="navbar">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/sicramawhite.webp" class="img-fluid logowhite" style="max-width:75%" />
-            <img src="assets/images/sicramablue.webp" class="img-fluid logoblue" style="max-width:75%" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mr-0 mb-2 mb-lg-0 align-items-center">
-              <li class="nav-item ">
-                <a class="nav-link line-below" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+<body onload="myFunction()" style="margin:0;">
 
-              <li class="nav-item">
-                <a class="nav-link" href="tel:01723564222"><span><i class='bx bx-phone'
-                      style=" font-size: 1.2rem;  transform: translateY(2px);"></i> 0172 356
-                    4222</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
-  <!-- Navbar end -->
-
-  <!-- Hero Section start -->
-  <section>
-    <div class="hero">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top"><i
+        class="fa-solid fa-angle-up"></i></button>
+    <!-- Navbar start -->
+    <section id="navbar">
       <div class="container">
-        <div class="main">
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="fw-bold display-5 text-light">Join us for the Best </h2>
-              <h1 class="fw-bold display-5 text-light mb-4">Digital Marketing Services
-              </h1>
-              <p class="fs-5 text-light">Sicrama Digital is a leading digital marketing service provider in India.
-                <br>Branding, SEO, SMO, PPC, Content Marketing, Email Marketing we provide everything.</br>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/sicramawhite.webp" class="img-fluid logowhite" style="max-width:75%" />
+              <img src="assets/images/sicramablue.webp" class="img-fluid logoblue" style="max-width:75%" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mr-0 mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item ">
+                  <a class="nav-link line-below" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="tel:01723564222"><span><i class='bx bx-phone'
+                        style=" font-size: 1.2rem;  transform: translateY(2px);"></i> 0172 356
+                      4222</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section>
+      <div class="hero">
+        <div class="container">
+          <div class="main">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="fw-bold display-5 text-light">Join us for the Best </h2>
+                <h1 class="fw-bold display-5 text-light mb-4">Digital Marketing Services
+                </h1>
+                <p class="fs-5 text-light">Sicrama Digital is a leading digital marketing service provider in India.
+                  <br>Branding, SEO, SMO, PPC, Content Marketing, Email Marketing we provide everything.</br>
+                </p>
+
+              </div>
+              <div class="col-md-6 mainimg">
+                <img src="assets/images/Homemain.webp" class="img-fluid ">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <img src="assets/images/curved.svg" class="img-fluid curved-main" />
+      </div>
+
+    </section>
+    <!-- Hero section end -->
+    <!-- card section start -->
+    <section>
+      <div class="container">
+        <div class="row mt-3">
+
+          <div class="col-md-4">
+
+            <div class="card cardy pb-5">
+              <div class="feature-box-wrapper">
+                <div class="feature-box-thumb">
+                  <img src="assets/images/digital-marketing.svg" class="img-fluid" />
+
+                </div>
+
+              </div>
+              <div class="text-center px-5">
+                <h5 class="mb-3 fw-bold text-primary">DIGITAL MARKETING</h5>
+                <p>Our advanced digital marketing strategies result in feasible ROI for your business.</p>
+
+              </div>
+              <div class="link mt-3 text-center">
+                <a href="digitalmarketing.html" class="labelCard text-primary text-decoration-none">Read More ></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+
+            <div class="card cardy pb-5">
+              <div class="feature-box-wrapper">
+                <div class="feature-box-thumb">
+                  <img src="assets/images/newsletter.svg" class="img-fluid" />
+
+                </div>
+
+              </div>
+              <div class="text-center px-5">
+                <h5 class="mb-3 fw-bold text-primary">EMAIL MARKETING</h5>
+                <p>Our extensive email marketing tactics bring forth the desirable results.</p>
+
+              </div>
+              <div class="link mt-3 text-center">
+                <a href="emailmarketing.html" class="labelCard text-primary text-decoration-none">Read More ></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+
+            <div class="card cardy pb-5">
+              <div class="feature-box-wrapper">
+                <div class="feature-box-thumb">
+                  <img src="assets/images/affiliate-marketing.svg" class="img-fluid" />
+
+                </div>
+
+              </div>
+              <div class="text-center px-5">
+                <h5 class="mb-3 fw-bold text-primary">AFFILIATE MARKETING</h5>
+                <p>Come join hands with a vast network of renowned brands and businesses. </p>
+
+              </div>
+              <div class="link mt-3 text-center">
+                <a href="affiliatemarketing.html" class="labelCard text-primary text-decoration-none">Read More ></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- card section end -->
+    <!-- Services section start -->
+    <section class="services my-5 py-5" id="services">
+      <div class="container">
+        <div class="row counter-up">
+          <div class="col-md-6 paddingcls" style="position: relative;">
+            <div class="heading">
+              <span Class="sub-title">About Us</span>
+              <h3 class="fw-bold">We Offer Complete Digital Marketing Solutions</h3>
+
+              <span class="title-separator separator-border theme-color-bg"></span>
+            </div>
+            <div class="content mt-5">
+              <p style="text-align: justify;">
+                Sicrama Digital is a renowned and reliable name in the digital marketing industry. We have provided
+                excellent online marketing services to several small and large brands.
               </p>
-
             </div>
-            <div class="col-md-6 mainimg">
-              <img src="assets/images/Homemain.webp" class="img-fluid ">
-              <div class="circle1"></div>
-              <div class="circle2"></div>
-              <div class="circle3"></div>
-              <div class="circle4"></div>
+            <div class="d-flex mt-5">
+              <div class="flexbox">
+                <h1 class="counter fw-bold display-4 text-primary">9<sup style="color:#e53e8e">+</sup></h1>
+                <p>Project Completed</p>
+              </div>
+              <div class="flexbox" style="margin-left: 5rem;">
+                <h1 class="counter fw-bold display-4 text-primary ml-4">19<sup style="color:#e53e8e">+</sup></h1>
+                <p>Satisfied Client</p>
+              </div>
+
+
             </div>
 
           </div>
+          <div class="col-md-6">
+            <img src="assets/images/homeservice.svg" class="img-fluid img-home1">
+          </div>
         </div>
-
 
 
       </div>
-      <img src="assets/images/curved.svg" class="img-fluid curved-main" />
-    </div>
 
-  </section>
-  <!-- Hero section end -->
-  <!-- card section start -->
-  <section>
-    <div class="container">
-      <div class="row mt-3">
+    </section>
 
-        <div class="col-md-4">
-
-          <div class="card cardy pb-5">
-            <div class="feature-box-wrapper">
-              <div class="feature-box-thumb">
-                <img src="assets/images/digital-marketing.svg" class="img-fluid" />
-
+    <!-- Services section end -->
+    <!-- get consultation start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 gfc">
+            <div class="card">
+              <div class="card-body m-0 p-5">
+                <img src="assets/images/circle.png" class="img-fluid" />
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="get-consultaion">
+                      <h2 class="fw-bold">Join Hands to Build a Better Business</h2>
+                      <p>Contact us for the best digital marketing services in India. </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="contact.html"><button class="btn btn-outline-danger  px-5 py-3"> Get a Free
+                        Consultation</button></a>
+                  </div>
+                </div>
               </div>
-
             </div>
-            <div class="text-center px-5">
-              <h5 class="mb-3 fw-bold text-primary">DIGITAL MARKETING</h5>
-              <p>Our advanced digital marketing strategies result in feasible ROI for your business.</p>
-
-            </div>
-            <div class="link mt-3 text-center">
-              <a href="digitalmarketing.html" class="labelCard text-primary text-decoration-none">Read More ></a>
-            </div>
-
           </div>
-        </div>
-        <div class="col-md-4">
 
-          <div class="card cardy pb-5">
-            <div class="feature-box-wrapper">
-              <div class="feature-box-thumb">
-                <img src="assets/images/newsletter.svg" class="img-fluid" />
-
-              </div>
-
-            </div>
-            <div class="text-center px-5">
-              <h5 class="mb-3 fw-bold text-primary">EMAIL MARKETING</h5>
-              <p>Our extensive email marketing tactics bring forth the desirable results.</p>
-
-            </div>
-            <div class="link mt-3 text-center">
-              <a href="emailmarketing.html" class="labelCard text-primary text-decoration-none">Read More ></a>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-md-4">
-
-          <div class="card cardy pb-5">
-            <div class="feature-box-wrapper">
-              <div class="feature-box-thumb">
-                <img src="assets/images/affiliate-marketing.svg" class="img-fluid" />
-
-              </div>
-
-            </div>
-            <div class="text-center px-5">
-              <h5 class="mb-3 fw-bold text-primary">AFFILIATE MARKETING</h5>
-              <p>Come join hands with a vast network of renowned brands and businesses. </p>
-
-            </div>
-            <div class="link mt-3 text-center">
-              <a href="affiliatemarketing.html" class="labelCard text-primary text-decoration-none">Read More ></a>
-            </div>
-
-          </div>
         </div>
       </div>
 
-    </div>
-  </section>
-  <!-- card section end -->
-  <!-- Services section start -->
-  <section class="services my-5 py-5" id="services">
-    <div class="container">
-      <div class="row counter-up">
-        <div class="col-md-6 paddingcls" style="position: relative;">
-          <div class="heading">
-            <span Class="sub-title">About Us</span>
-            <h3 class="fw-bold">We Offer Complete Digital Marketing Solutions</h3>
+    </section>
+    <!-- get consultation end -->
 
+
+    <!-- SEO agebcies start -->
+    <section class="services my-5 py-3" id="services">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="d-flex justify-content-between align-items-end">
+          <div class=" ml-0 heading">
+            <span Class="sub-title">Sevices</span>
+            <h3 class="fw-bold">We provide result-oriented</h3>
+            <h3 class="fw-bold">SEO services for all industries</h3>
             <span class="title-separator separator-border theme-color-bg"></span>
           </div>
-          <div class="content mt-5">
-            <p style="text-align: justify;">
-              Sicrama Digital is a renowned and reliable name in the digital marketing industry. We have provided
-              excellent online marketing services to several small and large brands.
-            </p>
+          <div>
+            <span class="link2"><a href="services.html" class="text-decoration-none fs-5 fw-bold"
+                style="color:#004080">See More
+                Services <i class="fa-solid fa-arrow-right-long"></i> </a></span>
           </div>
-          <div class="d-flex mt-5">
-            <div class="flexbox">
-              <h1 class="counter fw-bold display-4 text-primary">110<sup style="color:#e53e8e">+</sup></h1>
-              <p>Project Completed</p>
-            </div>
-            <div class="flexbox" style="margin-left: 5rem;">
-              <h1 class="counter fw-bold display-4 text-primary ml-4">79<sup style="color:#e53e8e">+</sup></h1>
-              <p>Satisfied Client</p>
-            </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-md-6 my-3">
+            <div class="card main-card hvr-rectangle-out">
+              <div class="overlay"></div>
+              <div class="card-header text-center ">
+                <h3>Search Engine Optimization (SEO)</h3>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle1 mb-4">About</h6>
+                <p class="card-text1 mb-5" style="text-align: justify;">Sicrama Digital’s excellent SEO services are
+                  focused on bringing your
+                  website
+                  the top ranking it deserves in search engine results.</p>
+                <a href="seomarketing.html" class="card-link  text-decoration-none">Read More <i
+                    class="fa-solid fa-arrow-right-long"></i></a>
 
+              </div>
+            </div>
 
           </div>
 
-        </div>
-        <div class="col-md-6">
-          <img src="assets/images/homeservice.svg" class="img-fluid ">
-        </div>
-      </div>
+          <div class="col-md-6 my-3">
+            <div class="card main-card hvr-rectangle-out">
 
+              <div class="card-header text-center ">
+                <h3>Social Media Marketing (SMM)</h3>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle1 mb-4">About</h6>
+                <p class="card-text1 mb-5" style="text-align: justify;">Our exclusive social media marketing (SMM)
+                  strategies help businesses to
+                  stand
+                  out from the competition with a positively influential brand image. </p>
+                <a href="socialmedia.html" class="card-link  text-decoration-none">Read More <i
+                    class="fa-solid fa-arrow-right-long"></i></a>
 
-    </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-3">
+            <div class="card main-card hvr-rectangle-out">
 
-  </section>
+              <div class="card-header text-center ">
+                <h3>Pay Per Click Marketing(PPC)</h3>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle1 mb-4">About</h6>
+                <p class="card-text1 mb-5" style="text-align: justify;">Our extensive Pay-Per-Click (PPC) marketing
+                  strategies are designed to get
+                  maximum revenue from your website. </p>
+                <a href="payperclick.html" class="card-link  text-decoration-none">Read More
+                  <i class="fa-solid fa-arrow-right-long"></i></a>
 
-  <!-- Services section end -->
-  <!-- get consultation start -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 gfc">
-          <div class="card">
-            <div class="card-body m-0 p-5">
-              <img src="assets/images/circle.png" class="img-fluid" />
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="get-consultaion">
-                    <h2 class="fw-bold">Join Hands to Build a Better Business</h2>
-                    <p>Contact us for the best digital marketing services in India. </p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <a href="contact.html"><button class="btn btn-outline-danger  px-5 py-3"> Get a Free
-                      Consultation</button></a>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-3">
+            <div class="card main-card hvr-rectangle-out">
+
+              <div class="card-header text-center ">
+                <h3>Email Marketing Services</h3>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle1 mb-4">About</h6>
+                <p class="card-text1 mb-5">Our extensive email marketing services help to bring the recognition and
+                  reliability that your brand and product deserves. </p>
+                <a href="emailmarketing.html" class="card-link  text-decoration-none">Read More <i
+                    class="fa-solid fa-arrow-right-long"></i></a>
+
               </div>
             </div>
           </div>
         </div>
 
+
+
       </div>
-    </div>
+    </section>
+    <!-- SEO agebcies end -->
+    <!-- Free SEO Analysis  start -->
+    <section class="my-5 py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="seo-wrapper">
+              <div class="contact-form-wrapper">
+                <h3 class="contact-form-title">Free SEO Analysis</h3>
+                <div class="contact-form">
+                  <form>
+                    <div>
+                      <input type="text" class="form-control" placeholder="Name*">
+                    </div>
+                    <div>
+                      <input type="email" class="form-control" placeholder="Email*">
+                    </div>
+                    <div>
+                      <input type="tel" class="form-control" placeholder="Phone*">
+                    </div>
+                    <div>
+                      <input type="text" class="form-control" placeholder="Website*">
+                    </div>
+                    <div>
+                      <input type="text" class="form-control" placeholder="Company*">
+                    </div>
+                    <div class="text-center mt-5  ">
+                      <button type="submit" class="btn btn-outline-danger px-5"> Send Message</button>
 
-  </section>
-  <!-- get consultation end -->
-  <!-- SEO agebcies start -->
-  <section class="services my-5 py-3" id="services">
-    <div class="container aos-init aos-animate" data-aos="fade-up">
-      <div class="d-flex justify-content-between align-items-end">
-        <div class=" ml-0 heading">
-          <span Class="sub-title">Sevices</span>
-          <h3 class="fw-bold">We provide result-oriented</h3>
-          <h3 class="fw-bold">SEO services for all industries</h3>
-          <span class="title-separator separator-border theme-color-bg"></span>
-        </div>
-        <div>
-          <span class="link2"><a href="services.html" class="text-decoration-none fs-5 fw-bold"
-              style="color:#004080">See More
-              Services <i class="fa-solid fa-arrow-right-long"></i> </a></span>
-        </div>
-      </div>
-      <div class="row my-3">
-        <div class="col-md-6 my-3">
-          <div class="card main-card">
-            <div class="overlay"></div>
-            <div class="card-header text-center ">
-              <h3>Search Engine Optimization (SEO)</h3>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle1 mb-4">About</h6>
-              <p class="card-text1 mb-5">Sicrama Digital’s excellent SEO services are focused on bringing your website
-                the top ranking it deserves in search engine results.</p>
-              <a href="seomarketing.html" class="card-link text-light text-decoration-none">Read More <i
-                  class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                  </form>
 
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6 my-3">
-          <div class="card main-card">
-
-            <div class="card-header text-center ">
-              <h3>Social Media Marketing (SMM)</h3>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle1 mb-4">About</h6>
-              <p class="card-text1 mb-5">Our exclusive social media marketing (SMM) strategies help businesses to stand
-                out from the competition with a positively influential brand image. </p>
-              <a href="socialmedia.html" class="card-link text-light text-decoration-none">Read More <i
-                  class="fa-solid fa-arrow-right-long"></i></a>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 my-3">
-          <div class="card main-card">
-
-            <div class="card-header text-center ">
-              <h3>Pay Per Click Marketing(PPC)</h3>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle1 mb-4">About</h6>
-              <p class="card-text1 mb-5">Our extensive Pay-Per-Click (PPC) marketing strategies are designed to get
-                maximum revenue from your website. </p>
-              <a href="payperclick.html" class="card-link text-light text-decoration-none">Read More
-                <i class="fa-solid fa-arrow-right-long"></i></a>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 my-3">
-          <div class="card main-card">
-
-            <div class="card-header text-center ">
-              <h3>Email Marketing Services</h3>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle1 mb-4">About</h6>
-              <p class="card-text1 mb-5">Our extensive email marketing services help to bring the recognition and
-                reliability that your brand and product deserves. </p>
-              <a href="emailmarketing.html" class="card-link text-light text-decoration-none">Read More <i
-                  class="fa-solid fa-arrow-right-long"></i></a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-  </section>
-  <!-- SEO agebcies end -->
-  <!-- Free SEO Analysis  start -->
-  <section class="my-5 py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="seo-wrapper">
-            <div class="contact-form-wrapper">
-              <h3 class="contact-form-title">Free SEO Analysis</h3>
-              <div class="contact-form">
-                <form>
-                  <div>
-                    <input type="text" class="form-control" placeholder="Name*">
-                  </div>
-                  <div>
-                    <input type="email" class="form-control" placeholder="Email*">
-                  </div>
-                  <div>
-                    <input type="tel" class="form-control" placeholder="Phone*">
-                  </div>
-                  <div>
-                    <input type="text" class="form-control" placeholder="Website*">
-                  </div>
-                  <div>
-                    <input type="text" class="form-control" placeholder="Company*">
-                  </div>
-                  <div class="text-center mt-5  ">
-                    <button type="submit" class="btn btn-outline-danger px-5"> Send Message</button>
-
-                  </div>
-                </form>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="seo-wrapper">
-            <h3 class="fw-bold mt-5">Stay Ahead of Your Competition With Increased Website Traffic</h3>
-            <span class="title-separator separator-border theme-color-bg"></span>
-            <p class="my-5">Sicrama Digital solutions provide your business and brand with the most relevant and
-              effective marketing strategies. These help you to always stay a step ahead of competition.
-            </p>
-            <div class="">
-              <h6 class="fw-bold my-4">Email marketing</h6>
-
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
-                  style="width: 80%;">
-                  <span class="prog">80%</span>
                 </div>
+
               </div>
 
-            </div>
-            <div class="">
-              <h6 class="fw-bold my-4">Enterprise Reporting</h6>
-
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
-                  style="width: 72%;">
-                  <span class="prog" style="left:72% ;">72%</span>
-                </div>
-              </div>
-
-            </div>
-            <div class="">
-              <h6 class="fw-bold my-4">Online Marketing</h6>
-
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
-                  style="width: 65%;">
-                  <span class="prog" style="left: 65%;">65%</span>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- Free SEO Analysis  end -->
-  <!-- Client says start -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="p-3 claint-say">
-            <span Class="sub-title">testimonals</span>
-            <h3 class="fw-bold">What Clients Say<br>
-              About Us</h3>
-            <span class="title-separator separator-border theme-color-bg"></span>
-            <p class="my-4 py-3">Our work speaks for itself, when it comes to quality and efficiency. Here’s what our
-              clients have to say about Sicrama Digital’s digital marketing services.</p>
-            <div>
-              <a href="contact.html"><button class="btn btn-outline-danger px-4 py-3">Get In Touch</button></a>
-            </div>
-
-          </div>
-
-        </div>
-        <div class="col-md-4">
-          <div class="testimonals">
-            <div class="testimoinal-info">
-              <h4>
-                Natasha
-              </h4>
-              <p class="testm mb-0"> Happy Client</p>
-            </div>
-            <div class="testimonial-excerpt">
-              <p class="testm pb-4">“Sicrama Digital has been providing us with the best quality digital marketing
-                services. Their efforts have helped our company to grow at an unprecedented rate in the past year.
-                Thanks to Sicrama Digital for a wonderful job.”
+          <div class="col-md-6">
+            <div class="seo-wrapper">
+              <h3 class="fw-bold mt-5">Stay Ahead of Your Competition With Increased Website Traffic</h3>
+              <span class="title-separator separator-border theme-color-bg"></span>
+              <p class="my-5" style="text-align: justify;">Sicrama Digital solutions provide your business and brand
+                with
+                the most relevant and
+                effective marketing strategies. These help you to always stay a step ahead of competition.
               </p>
+              <div class="">
+                <h6 class="fw-bold my-4">Email marketing</h6>
 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
+                    style="width: 98%;">
+                    <span class="prog" style="left:98% ;">98%</span>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="">
+                <h6 class="fw-bold my-4">Enterprise Reporting</h6>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
+                    style="width: 94%;">
+                    <span class="prog" style="left:94% ;">94%</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="">
+                <h6 class="fw-bold my-4">Online Marketing</h6>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
+                    style="width: 92%;">
+                    <span class="prog" style="left: 92%;">92%</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
-
-        </div>
-        <div class="col-md-4">
-          <div class="testimonals">
-            <div class="testimoinal-info">
-              <h4>
-                Pavan
-              </h4>
-              <p class="testm mb-0"> Happy Client</p>
-            </div>
-            <div class="testimonial-excerpt">
-              <p class="testm pb-4">“Sicrama Digital has become our top choice for online marketing. Their vast
-                experience and large range of services helps businesses to grow to their complete potential with the
-                least effort and risk.”
-              </p>
-
-            </div>
-
-          </div>
-
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-  <!-- Client says end -->
-  <!-- Carousel start -->
-  <section class="py-3 my-5">
-    <div class="container">
-      <div class="container text-center my-3">
-        <h2 class="font-weight-light fw-bold mb-5" style="position: relative;">Our Latest blog
+    <!-- Free SEO Analysis  end -->
+    <!-- Client says start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="p-3 claint-say">
+              <span Class="sub-title">testimonals</span>
+              <h3 class="fw-bold">What Clients Say<br>
+                About Us</h3>
+              <span class="title-separator separator-border theme-color-bg"></span>
+              <p class="my-4 py-3">Our work speaks for itself, when it comes to quality and efficiency. Here’s what
+                our
+                clients have to say about Sicrama Digital’s digital marketing services.</p>
+              <div>
+                <a href="contact.html"><button class="btn btn-outline-danger px-4 py-3">Get In Touch</button></a>
+              </div>
 
-        </h2>
-        <div class="row mx-auto my-auto justify-content-center">
-          <div id="recipeCarousel" class="carousel ">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="col-md-4">
-                  <div class="card m-2">
-                    <div class="card-img">
-                      <img src="assets/images/1.webp" class="img-fluid">
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="testimonals">
+              <div class="testimoinal-info">
+                <h4>
+                  Natasha
+                </h4>
+                <p class="testm mb-0"> Happy Client</p>
+                <p class="testm mb-0" style="font-size: 14px; margin-bottom: -0.5rem;">Manager</p>
+              </div>
+
+              <div class="testimonial-excerpt">
+                <p class="testm pb-4" style="text-align: justify;">“Sicrama Digital has been providing us with the best
+                  quality digital marketing
+                  services. Their efforts have helped our company to grow at an unprecedented rate in the past year.
+                  Thanks to Sicrama Digital for a wonderful job.”
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="testimonals">
+              <div class="testimoinal-info">
+                <h4>
+                  Pavan
+                </h4>
+                <p class="testm mb-0"> Happy Client</p>
+                <p class="testm mb-0" style="font-size: 14px; margin-bottom: -0.5rem;">Software Developer</p>
+              </div>
+              <div class="testimonial-excerpt">
+                <p class="testm pb-4" style="text-align: justify;">“Sicrama Digital has become our top choice for online
+                  marketing. Their vast
+                  experience and large range of services helps businesses to grow to their complete potential with the
+                  least effort and risk.”
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Client says end -->
+    <!-- Carousel start -->
+    <section class="py-3 my-5">
+      <div class="container">
+        <div class="container text-center my-3">
+          <h2 class="font-weight-light fw-bold mb-5" style="position: relative;">Our Latest blog
+
+          </h2>
+          <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel ">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-4">
+                    <div class="card m-2">
+                      <div class="card-img">
+                        <img src="assets/images/1.webp" class="img-fluid">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="my-3 fw-bold text-left">
+                          Why Digital
+                          Marketing is Important for Your Business?
+                        </h5>
+                        <p class="text-primary text-left">May 3, 2022</p>
+                      </div>
+
                     </div>
-                    <div class="card-body ">
-                      <h5 class="my-3 fw-bold text-left">
-                        Why Digital
-                        Marketing is Important for Your Business?
-                      </h5>
-                      <p class="text-primary text-left">May 3, 2022</p>
-                    </div>
-
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col-md-4">
-                  <div class="card m-2">
-                    <div class="card-img">
-                      <img src="assets/images/2.webp" class="img-fluid">
-                    </div>
-                    <div class="card-body ">
-                      <h5 class="my-3 fw-bold text-left">
-                        How Online
-                        Marketing can Boost Your Sales?
-                      </h5>
-                      <p class="text-primary text-left">May 3, 2022</p>
-                    </div>
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card m-2">
+                      <div class="card-img">
+                        <img src="assets/images/2.webp" class="img-fluid">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="my-3 fw-bold text-left">
+                          How Online
+                          Marketing can Boost Your Sales?
+                        </h5>
+                        <p class="text-primary text-left">May 3, 2022</p>
+                      </div>
 
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- <div class="carousel-item">
+                <!-- <div class="carousel-item">
                 <div class="col-md-4">
                   <div class="card m-2">
                     <div class="card-img">
@@ -590,127 +612,140 @@
                 </div>
               </div> -->
 
+              </div>
+              <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                  style="background: white;border-radius: 50%;">
+                  <i class='bx bx-chevron-left' style="font-size: xx-large;color: black;"></i>
+                </span>
+              </a>
+              <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                  style="background: white;border-radius: 50%;"><i class='bx bx-chevron-right'
+                    style="font-size: xx-large;color: black;"></i></span>
+              </a>
             </div>
-            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true" style="background: white;border-radius: 50%;">
-                <i class='bx bx-chevron-left' style="font-size: xx-large;color: black;"></i>
-              </span>
-            </a>
-            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"
-                style="background: white;border-radius: 50%;"><i class='bx bx-chevron-right'
-                  style="font-size: xx-large;color: black;"></i></span>
-            </a>
+          </div>
+
+        </div>
+    </section>
+    <!-- Carousel end -->
+    <!-- Footer strat -->
+    <footer>
+      <div class="footer ">
+        <img src="assets/images/Path 455.png" class="img-fluid footerimg">
+        <div class="newslatter text-center">
+          <h3 class=" fw-bold">Newsletter Sign Up</h3>
+          <p class="py-3">Subscribe our newsletter to get latest news about our new product and product campaign.</p>
+
+          <div class="input-group mb-3 px-5">
+            <input type="text" class="form-control newslatterinput " placeholder="Your Email Address"
+              aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text btn-primary" id="basic-addon2">Subscribe</span>
+            </div>
           </div>
         </div>
+        <div class="container footer-content pb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="logo">
+                <img src="assets/images/sicramawhite.webp" class="img-fluid" style="max-width:65%" />
+              </div>
+              <a href="https://goo.gl/maps/89nDYmYULHozQ68s7" class="text-decoration-none">
+                <div class="d-flex mt-4">
+                  <div>
+                    <img src="assets/images/pin.svg" class="img-fluid icon">
+                  </div>
+                  <p class=" adrr">Sicrama Infotech Pvt. Ltd.<br> Royal Rudra Building, <br>
+                    Hingna Road, Nagpur <br>Maharashtra-440016</p>
 
-      </div>
-  </section>
-  <!-- Carousel end -->
-  <!-- Footer strat -->
-  <footer>
-    <div class="footer ">
-      <img src="assets/images/Path 455.png" class="img-fluid footerimg">
-      <div class="newslatter text-center">
-        <h3 class=" fw-bold">Newsletter Sign Up</h3>
-        <p class="py-3">Subscribe our newsletter to get latest news about our new product and product campaign.</p>
-
-        <div class="input-group mb-3 px-5">
-          <input type="text" class="form-control newslatterinput " placeholder="Your Email Address"
-            aria-label="Recipient's username" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <span class="input-group-text btn-primary" id="basic-addon2">Subscribe</span>
-          </div>
-        </div>
-      </div>
-      <div class="container footer-content pb-5">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="logo">
-              <img src="assets/images/sicramawhite.webp" class="img-fluid" style="max-width:65%" />
-            </div>
-            <a href="https://goo.gl/maps/89nDYmYULHozQ68s7" class="text-decoration-none">
-              <div class="d-flex mt-4">
-                <div>
-                  <img src="assets/images/pin.svg" class="img-fluid icon">
                 </div>
-                <p class=" adrr">Sicrama Infotech Pvt. Ltd.<br> Royal Rudra Building, <br>
-                  Hingna Road, Nagpur <br>Maharashtra-440016</p>
+              </a>
 
+              <a href="mailto: contact@sicramadigital.com" class="text-decoration-none">
+                <div class="d-flex ">
+                  <div>
+                    <img src="assets/images/mail.svg" class="img-fluid icon">
+                  </div>
+                  <p class=" adrr">contact@sicramadigital.com</p>
+
+                </div>
+              </a>
+
+              <a href="tel:01723564222" class="text-decoration-none">
+                <div class="d-flex ">
+                  <div>
+                    <img src="assets/images/phone-2.svg" class="img-fluid icon">
+                  </div>
+                  <p class=" adrr">0712 356 4222</p>
+                </div>
+              </a>
+
+              <div class="d-flex socialicon">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-youtube'></i>
               </div>
-            </a>
-            <div class="d-flex ">
-              <div>
-                <img src="assets/images/mail.svg" class="img-fluid icon">
-              </div>
-              <p class=" adrr">contact@sicramadigital.com</p>
+            </div>
+            <div class="col-md-4 text-light">
+              <h6><b>Important Links</b></h6>
+              <ul class="implink mt-4">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+
+              </ul>
 
             </div>
-            <div class="d-flex ">
-              <div>
-                <img src="assets/images/phone-2.svg" class="img-fluid icon">
-              </div>
-              <p class=" adrr">0712 352 4222</p>
+            <div class="col-md-4 text-light">
+              <h6>Policies</h6>
+              <ul class="implink mt-4">
+                <li>
+                  <a href="terms&condition.html">Terms and Condition</a>
+                </li>
+                <li>
+                  <a href="privacypolicy.html">Privacy Policy</a>
+                </li>
+
+              </ul>
 
             </div>
-            <div class="d-flex socialicon">
-              <i class='bx bxl-facebook'></i>
-              <i class='bx bxl-twitter'></i>
-              <i class='bx bxl-linkedin'></i>
-              <i class='bx bxl-youtube'></i>
-            </div>
           </div>
-          <div class="col-md-4 text-light">
-            <h6><b>Important Links</b></h6>
-            <ul class="implink mt-4">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="aboutus.html">About Us</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact Us</a>
-              </li>
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
 
-            </ul>
-
-          </div>
-          <div class="col-md-4 text-light">
-            <h6>Policies</h6>
-            <ul class="implink mt-4">
-              <li>
-                <a href="terms&condition.html">Terms and Condition</a>
-              </li>
-              <li>
-                <a href="privacypolicy.html">Privacy Policy</a>
-              </li>
-
-            </ul>
-
-          </div>
         </div>
 
       </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <p class="text-light text-center py-3 mb-0">@2022 | All Rights Reserved | Designed & Developed By
+            <a href="https://sicrama.com/" class="text-decoration-none text-light">Sicrama
+              Infotech
+              Private Limited.</a>
+          </p>
+        </div>
 
-    </div>
-    <div class="bottom-footer">
-      <div class="container">
-        <p class="text-light text-center py-3 mb-0">@2022 | All Rights Reserved | Designed & Developed By Sicrama
-          Infotech
-          Private Limited.</p>
       </div>
+    </footer>
+  </div>
 
-    </div>
 
-  </footer>
+
 
   <!-- footer End -->
+
 
   <!-- Vendor JS Files -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -748,6 +783,18 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
     }
   </script>
 
