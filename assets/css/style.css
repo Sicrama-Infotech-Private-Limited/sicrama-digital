@@ -373,6 +373,7 @@ body {
   color: white;
   height: 95%;
 }
+
 .main-card a {
   color: white;
 }
@@ -380,6 +381,7 @@ body {
 .main-card:hover a {
   color: #004080;
 }
+
 /* .main-card:hover {
   background: #804d00;
   transform: scale(0, 0);
@@ -437,6 +439,18 @@ body {
 /* SEO Agencies end */
 .seo-wrapper {
   position: relative;
+}
+
+.tempo:hover .hover2 {
+  display: none;
+}
+
+.tempo:hover .hover1 {
+  display: block;
+}
+
+.hover1 {
+  display: none;
 }
 
 .contact-form-wrapper {
