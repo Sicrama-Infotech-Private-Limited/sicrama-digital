@@ -43,40 +43,38 @@
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
-  animation-duration: 1s
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
   from {
     bottom: -100px;
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     bottom: 0px;
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes animatebottom {
   from {
     bottom: -100px;
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     bottom: 0;
-    opacity: 1
+    opacity: 1;
   }
 }
 
 #myDiv {
   display: none;
-
 }
 
 /*loader end*/
-
 
 * {
   padding: 0;
@@ -112,7 +110,6 @@ body {
 }
 
 @media (min-width: 1400px) {
-
   .container,
   .container-lg,
   .container-md,
@@ -517,11 +514,6 @@ body {
   -webkit-transition: width 1s linear;
 }
 
-/* .progress:hover .prog {
-  left: 80%;
-  transition: all 1s linear;
-} */
-
 .claint-say {
   position: relative;
 }
@@ -819,7 +811,12 @@ body {
   color: #fff;
 }
 
-.widget-area .widget.widget_nav_menu .menu-services-menu-container ul.menu li.current-menu-item a,
+.widget-area
+  .widget.widget_nav_menu
+  .menu-services-menu-container
+  ul.menu
+  li.current-menu-item
+  a,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:hover,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:active,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:focus {
@@ -910,8 +907,6 @@ body {
     max-width: 60%;
     padding-left: 93px;
   }
-
-
 
   .circle3 {
     bottom: 2rem;
@@ -1006,7 +1001,7 @@ body {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1136px) {
+@media screen and (min-width: 768px) and (max-width: 1136px) {
   .mainimg img {
     position: absolute;
     top: -1rem;
