@@ -509,7 +509,7 @@ body {
 
   padding: 9px 0;
   font-size: 0.8rem;
-  left: 80%;
+  /* left: 80%; */
   transition: all 1s linear;
   -webkit-transition: width 1s linear;
 }
@@ -517,7 +517,21 @@ body {
 .claint-say {
   position: relative;
 }
-
+.progress.animate .prog1 {
+  left: 0%;
+  transform: translateX(592px);
+  transition: 1s;
+}
+.progress.animate .prog2 {
+  left: 0%;
+  transform: translateX(558px);
+  transition: 1.5s;
+}
+.progress.animate .prog3 {
+  left: 0%;
+  transform: translateX(542px);
+  transition: 2s;
+}
 .sub-title {
   font-size: 62px;
   font-weight: 900;

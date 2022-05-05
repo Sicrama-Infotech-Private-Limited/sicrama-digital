@@ -23,7 +23,7 @@
   <!-- venobox -->
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
   <!-- aos -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--icofont  -->
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
   <!--owl.carousel  -->
@@ -97,9 +97,12 @@
           <div class="main">
             <div class="row">
               <div class="col-md-6">
-                <h2 class="fw-bold display-5 text-light">Join us for the Best </h2>
-                <h1 class="fw-bold display-5 text-light mb-4">Digital Marketing Services
-                </h1>
+                <div class="">
+                  <h2 class="fw-bold display-5 text-light ">Join us for the Best </h2>
+                  <h1 class="fw-bold display-5 text-light mb-4">Digital Marketing Services
+                  </h1>
+                </div>
+
                 <p class="fs-5 text-light">Sicrama Digital is a leading digital marketing service provider in India.
                   <br>Branding, SEO, SMO, PPC, Content Marketing, Email Marketing we provide everything.</br>
                 </p>
@@ -220,7 +223,7 @@
                 <p>Project Completed</p>
               </div>
               <div class="flexbox" style="margin-left: 5rem;">
-                <h1 class="counter fw-bold display-4 text-primary ml-4">19<sup style="color:#e53e8e">+</sup></h1>
+                <h1 class="counter2 fw-bold display-4 text-primary ml-4">90<sup style="color:#e53e8e">+</sup></h1>
                 <p>Satisfied Client</p>
               </div>
 
@@ -366,7 +369,7 @@
     </section>
     <!-- SEO agebcies end -->
     <!-- Free SEO Analysis  start -->
-    <section class="my-5 py-3">
+    <section class="my-5 py-3" id="seo-wrapper">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -417,7 +420,7 @@
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
                     style="width: 98%;">
-                    <span class="prog" style="left:98% ;">98%</span>
+                    <span class="prog prog1">98%</span>
                   </div>
 
                 </div>
@@ -429,7 +432,7 @@
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
                     style="width: 94%;">
-                    <span class="prog" style="left:94% ;">94%</span>
+                    <span class="prog prog2">94%</span>
                   </div>
                 </div>
 
@@ -440,7 +443,7 @@
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100"
                     style="width: 92%;">
-                    <span class="prog" style="left: 92%;">92%</span>
+                    <span class="prog prog3">92%</span>
                   </div>
                 </div>
               </div>
@@ -760,10 +763,10 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/carosual.js"></script>
-  <script src="jquery.counterup.min.js"></script>
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
 
 
 
@@ -798,7 +801,90 @@
     }
   </script>
 
+  <script>
+    const counterUp = window.counterUp.default
 
+    const callback = entries => {
+      entries.forEach(entry => {
+        const el = entry.target
+        if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+          counterUp(el, {
+            duration: 2000,
+            delay: 16,
+          })
+          el.classList.add('is-visible')
+        }
+      })
+    }
+
+    const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+    const el = document.querySelector('.counter')
+    IO.observe(el)
+  </script>
+  <script>
+    const counterup2 = window.counterUp.default
+
+    const callback2 = entries => {
+      entries.forEach(entry => {
+        const el2 = entry.target
+        if (entry.isIntersecting && !el2.classList.contains('is-visible')) {
+          counterup2(el2, {
+            duration: 2000,
+            delay: 16,
+          })
+          el2.classList.add('is-visible')
+        }
+      })
+    }
+
+    const IO2 = new IntersectionObserver(callback2, { threshold: 1 })
+
+    const el2 = document.querySelector('.counter2')
+    IO.observe(el2)
+  </script>
+  <script>
+      (function ($) {
+
+        /**
+         * Copyright 2012, Digital Fusion
+         * Licensed under the MIT license.
+         * http://teamdf.com/jquery-plugins/license/
+         *
+         * @author Sam Sehnert
+         * @desc A small plugin that checks whether elements are within
+         *     the user visible viewport of a web browser.
+         *     only accounts for vertical position, not horizontal.
+         */
+
+        $.fn.visible = function (partial) {
+
+          var $t = $(this),
+            $w = $(window),
+            viewTop = $w.scrollTop(),
+            viewBottom = viewTop + $w.height(),
+            _top = $t.offset().top,
+            _bottom = _top + $t.height(),
+            compareTop = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+          return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+        };
+
+      })(jQuery);
+
+    $(window).scroll(function (event) {
+
+      $(".progress").each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+          el.addClass("animate");
+        }
+      });
+
+    });
+  </script>
 
 </body>
 
