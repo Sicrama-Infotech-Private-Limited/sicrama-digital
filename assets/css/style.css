@@ -378,7 +378,52 @@ body {
 .main-card:hover a {
   color: #004080;
 }
-
+.service-box-thumb {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  overflow: inherit;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+}
+.service-box-thumb:before {
+  content: "";
+  background: linear-gradient(-215deg, #292391 4%, #e53e8e 96%);
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  left: -15px;
+  bottom: 81px;
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  transition: all 0.9s ease;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  z-index: -1;
+}
+.service-box-thumb img {
+  width: 14rem;
+}
+.service-content {
+  padding-left: 2.5rem;
+}
+.color-icon {
+  display: none;
+}
+.main-card:hover .color-icon {
+  display: block;
+}
+.main-card:hover .bnw-icon {
+  display: none;
+}
+.main-card:hover .service-box-thumb:before {
+  background: #fff !important;
+}
 /* .main-card:hover {
   background: #804d00;
   transform: scale(0, 0);
