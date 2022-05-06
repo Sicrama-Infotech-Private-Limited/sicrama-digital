@@ -383,7 +383,9 @@ body {
   left: -71px;
   max-width: 12%;
 }
-
+.seo-industries {
+  display: flex;
+}
 /* get consultation end */
 /* SEO Agencies start */
 .main-card {
@@ -410,6 +412,9 @@ body {
   transition: all 1.5s ease;
   -webkit-transition: all 1.5s ease;
   -moz-transition: all 1.5s ease;
+}
+.service-box {
+  display: flex;
 }
 
 .service-box-thumb:before {
@@ -455,60 +460,9 @@ body {
 .main-card:hover .service-box-thumb:before {
   background: #fff !important;
 }
-
-/* .main-card:hover {
-  background: #804d00;
-  transform: scale(0, 0);
-  /* transition: all 0.5s ease; */
-
-/* .main-card:before {
-  background: url("../images/theme-light.jpg");
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  right: 0;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-} */
-
-/* .main-card:hover {
-  background: white;
-  color: black;
-} */
-
-/* .main-card:hover {
-  background: url("../images/theme-light.jpg");
-
-  color: #004080;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: transform 0.3s ease-out;
-} */
-
-/* .main-card:hover .overlay {
-  transform: scale(4) translateZ(0);
+.counterUp {
+  display: flex;
 }
-.overlay {
-  width: 118px;
-  position: absolute;
-  height: 118px;
-
-  background: url("../images/theme-light.jpg");
-  top: 70px;
-  left: 50px;
-  z-index: 0;
-  transition: transform 0.3s ease-out;
-} */
 
 /* SEO Agencies end */
 .seo-wrapper {
@@ -1075,6 +1029,45 @@ body {
 
   .footer-content {
     padding: 10rem 1rem;
+  }
+  .counterUp {
+    display: block;
+  }
+  .flexbox2 {
+    margin-left: 0rem !important;
+  }
+  .img-home1 {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+  .seo-industries {
+    display: block;
+  }
+  .service-box {
+    display: block;
+  }
+  .service-box-thumb:before {
+    bottom: -12px;
+  }
+  .service-box-thumb img {
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
+  .progress.animate .prog1 {
+    left: 0%;
+    transform: translateX(287px);
+    transition: 1s;
+  }
+  .progress.animate .prog2 {
+    left: 0%;
+    transform: translateX(280px);
+    transition: 1.5s;
+  }
+  .progress.animate .prog3 {
+    left: 0%;
+    transform: translateX(272px);
+    transition: 2s;
   }
 }
 
