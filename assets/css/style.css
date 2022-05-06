@@ -19,9 +19,11 @@
   display: block;
   margin: auto;
 }
+
 p {
   text-align: justify;
 }
+
 ol > li,
 .policy ul > li,
 dd {
@@ -1217,4 +1219,16 @@ body {
 .teams:hover .teams-desc {
   visibility: visible;
   opacity: 0.8;
+}
+
+@media screen and (min-width: 1600px) {
+  .curved-main {
+    transform: translate(-97px, 95px);
+    max-width: 107%;
+  }
+
+  .footerimg {
+    transform: translate(-81px, -100px);
+    max-width: 106%;
+  }
 }
