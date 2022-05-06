@@ -1195,7 +1195,7 @@ body {
   position: absolute;
   top: 1.9rem;
   bottom: 0;
-  left: 2.3rem;
+  left: 2.36rem;
   right: 0;
   background: #e53e8e;
   color: #fff;
@@ -1208,7 +1208,12 @@ body {
 
   transition: opacity 0.2s, visibility 0.2s;
 }
-
+.teams-desc p {
+  text-align: center;
+}
+.teams-desc p a {
+  color: white;
+}
 .teams:hover .teams-desc {
   visibility: visible;
   opacity: 0.8;
