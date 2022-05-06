@@ -391,6 +391,7 @@ body {
 .main-card:hover a {
   color: #004080;
 }
+
 .service-box-thumb {
   position: relative;
   width: auto;
@@ -400,6 +401,7 @@ body {
   -webkit-transition: all 1.5s ease;
   -moz-transition: all 1.5s ease;
 }
+
 .service-box-thumb:before {
   content: "";
   background: linear-gradient(-215deg, #292391 4%, #e53e8e 96%);
@@ -419,24 +421,31 @@ body {
   -moz-transition: all 0.9s ease;
   z-index: -1;
 }
+
 .service-box-thumb img {
   width: 14rem;
 }
+
 .service-content {
   padding-left: 2.5rem;
 }
+
 .color-icon {
   display: none;
 }
+
 .main-card:hover .color-icon {
   display: block;
 }
+
 .main-card:hover .bnw-icon {
   display: none;
 }
+
 .main-card:hover .service-box-thumb:before {
   background: #fff !important;
 }
+
 /* .main-card:hover {
   background: #804d00;
   transform: scale(0, 0);
@@ -594,21 +603,25 @@ body {
 .claint-say {
   position: relative;
 }
+
 .progress.animate .prog1 {
   left: 0%;
   transform: translateX(592px);
   transition: 1s;
 }
+
 .progress.animate .prog2 {
   left: 0%;
   transform: translateX(558px);
   transition: 1.5s;
 }
+
 .progress.animate .prog3 {
   left: 0%;
   transform: translateX(542px);
   transition: 2s;
 }
+
 .sub-title {
   font-size: 62px;
   font-weight: 900;
@@ -1149,4 +1162,32 @@ body {
     margin-left: -147px;
     margin-top: -116px;
   }
+}
+
+.teams {
+  position: relative;
+}
+
+.teams-desc {
+  position: absolute;
+  top: 1.9rem;
+  bottom: 0;
+  left: 2.3rem;
+  right: 0;
+  background: #e53e8e;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 50%;
+  height: 80%;
+  width: 75%;
+  padding-top: 7rem;
+
+  transition: opacity .2s,
+    visibility .2s;
+}
+
+.teams:hover .teams-desc {
+  visibility: visible;
+  opacity: 0.8;
 }
