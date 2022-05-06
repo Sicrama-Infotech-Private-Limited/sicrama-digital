@@ -329,7 +329,7 @@
                                     <p class="mt-3" style="font-size: 14px;">Email marketing is as effective today as it
                                         was earlier and factually helps to attract new potential consumers through
                                         precisely targeted email ads.</p>
-                                    <a href="emailmarketing.html">
+                                    <a href="graphicsdesign.html">
                                         <button class="btn btn-primary btng">
                                             <i style="font-size: 20px;"
                                                 class="fa-solid fa-arrow-right-long"></i></button>
@@ -351,7 +351,7 @@
                                     <p class="mt-3" style="font-size: 14px;">Affiliate marketing helps you to expand
                                         your business contacts and enable your product to be sold on multiple popular
                                         online platforms.</p>
-                                    <a href="affiliatemarketing.html">
+                                    <a href="webdesign.html">
                                         <button class="btn btn-primary btng">
                                             <i style="font-size: 20px;"
                                                 class="fa-solid fa-arrow-right-long"></i></button>
@@ -373,7 +373,7 @@
                                     <p class="mt-3" style="font-size: 14px;">Videos are extremely impactful for
                                         advertising, especially when our expert film-makers are handling your video
                                         advertisement campaigns.</p>
-                                    <a href="Videomarketing.html">
+                                    <a href="logodesign.html">
                                         <button class="btn btn-primary btng">
                                             <i style="font-size: 20px;"
                                                 class="fa-solid fa-arrow-right-long"></i></button>
@@ -416,7 +416,7 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <h1 class="count" style="color: rgba(41, 35, 145, 255)"><b>9</b><sup
+                            <h1 class="counter" style="color: rgba(41, 35, 145, 255)"><b>9</b><sup
                                     style="color: rgba(229, 62, 142, 255);">+</sup>
                             </h1>
 
@@ -424,7 +424,7 @@
                             <h6 class="count">Projects Completed</h6>
                         </div>
                         <div class="col-md-6">
-                            <h1 class="count" style="color: rgba(41, 35, 145, 255)"><b>19</b><sup
+                            <h1 class="counter2" style="color: rgba(41, 35, 145, 255)"><b>90</b><sup
                                     style="color: rgba(229, 62, 142, 255);">+</sup>
                             </h1>
                             <h6 class="count">Satisfied Clients</h6>
@@ -570,7 +570,7 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
 
     <script>
         var mybutton = document.getElementById("myBtn");
@@ -589,6 +589,48 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+    </script>
+    <script>
+        const counterUp = window.counterUp.default
+
+        const callback = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    counterUp(el, {
+                        duration: 2000,
+                        delay: 16,
+                    })
+                    el.classList.add('is-visible')
+                }
+            })
+        }
+
+        const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+        const el = document.querySelector('.counter')
+        IO.observe(el)
+    </script>
+    <script>
+        const counterup2 = window.counterUp.default
+
+        const callback2 = entries => {
+            entries.forEach(entry => {
+                const el2 = entry.target
+                if (entry.isIntersecting && !el2.classList.contains('is-visible')) {
+                    counterup2(el2, {
+                        duration: 2000,
+                        delay: 16,
+                    })
+                    el2.classList.add('is-visible')
+                }
+            })
+        }
+
+        const IO2 = new IntersectionObserver(callback2, { threshold: 1 })
+
+        const el2 = document.querySelector('.counter2')
+        IO.observe(el2)
     </script>
 
 
