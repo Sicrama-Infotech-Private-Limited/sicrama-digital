@@ -69,6 +69,15 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .counter2 {
+    text-align: center;
+  }
+
+  .counter {
+    text-align: center;
+  }
+
   .service-banner {
     padding: 2rem;
   }

@@ -4,10 +4,8 @@
   border-radius: 50%;
   padding-left: 7px;
   padding-right: 7px;
-  background-image: linear-gradient(
-    rgba(41, 35, 145, 255),
-    rgba(229, 62, 142, 255)
-  );
+  background-image: linear-gradient(rgba(41, 35, 145, 255),
+      rgba(229, 62, 142, 255));
   border: none;
   color: white;
   padding-top: 2px;
@@ -19,11 +17,13 @@
   display: block;
   margin: auto;
 }
+
 p {
   text-align: justify;
 }
-ol > li,
-.policy ul > li,
+
+ol>li,
+.policy ul>li,
 dd {
   text-align: justify;
 }
@@ -131,6 +131,7 @@ body {
 }
 
 @media (min-width: 1400px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -923,12 +924,7 @@ body {
   color: #fff;
 }
 
-.widget-area
-  .widget.widget_nav_menu
-  .menu-services-menu-container
-  ul.menu
-  li.current-menu-item
-  a,
+.widget-area .widget.widget_nav_menu .menu-services-menu-container ul.menu li.current-menu-item a,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:hover,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:active,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:focus {
@@ -999,6 +995,7 @@ body {
 /*scroller end*/
 
 @media screen and (max-width: 600px) {
+
   .aboutcontent {
     background: none;
   }
@@ -1204,11 +1201,13 @@ body {
   visibility: visible;
   opacity: 0.8;
 }
+
 @media screen and (min-width: 1600px) {
   .curved-main {
     transform: translate(-97px, 95px);
     max-width: 107%;
   }
+
   .footerimg {
     transform: translate(-81px, -100px);
     max-width: 106%;
