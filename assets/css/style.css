@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
+.labelCard:hover {
+  font-weight: bolder;
+}
+
+.card-link:hover {
+  font-weight: bolder;
+}
+
 .blog-btn {
   border-radius: 50%;
   padding-left: 7px;
   padding-right: 7px;
-  background-image: linear-gradient(
-    rgba(41, 35, 145, 255),
-    rgba(229, 62, 142, 255)
-  );
+  background-image: linear-gradient(rgba(41, 35, 145, 255),
+      rgba(229, 62, 142, 255));
   border: none;
   color: white;
   padding-top: 2px;
@@ -24,8 +31,8 @@ p {
   text-align: justify;
 }
 
-ol > li,
-.policy ul > li,
+ol>li,
+.policy ul>li,
 dd {
   text-align: justify;
 }
@@ -133,6 +140,7 @@ body {
 }
 
 @media (min-width: 1400px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -157,7 +165,7 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0.5rem 2rem;
+  padding: 0.3rem 1.5rem;
   color: white;
 }
 
@@ -383,9 +391,11 @@ body {
   left: -71px;
   max-width: 12%;
 }
+
 .seo-industries {
   display: flex;
 }
+
 /* get consultation end */
 /* SEO Agencies start */
 .main-card {
@@ -413,6 +423,7 @@ body {
   -webkit-transition: all 1.5s ease;
   -moz-transition: all 1.5s ease;
 }
+
 .service-box {
   display: flex;
 }
@@ -460,6 +471,7 @@ body {
 .main-card:hover .service-box-thumb:before {
   background: #fff !important;
 }
+
 .counterUp {
   display: flex;
 }
@@ -879,12 +891,7 @@ body {
   color: #fff;
 }
 
-.widget-area
-  .widget.widget_nav_menu
-  .menu-services-menu-container
-  ul.menu
-  li.current-menu-item
-  a,
+.widget-area .widget.widget_nav_menu .menu-services-menu-container ul.menu li.current-menu-item a,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:hover,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:active,
 .widget-area .widget.widget_nav_menu .menu-services-menu-container li a:focus {
@@ -1030,40 +1037,50 @@ body {
   .footer-content {
     padding: 10rem 1rem;
   }
+
   .counterUp {
     display: block;
   }
+
   .flexbox2 {
     margin-left: 0rem !important;
   }
+
   .img-home1 {
     max-width: 100%;
     height: auto;
     margin-left: 0px;
   }
+
   .seo-industries {
     display: block;
   }
+
   .service-box {
     display: block;
   }
+
   .service-box-thumb:before {
     bottom: -12px;
   }
+
   .service-box-thumb img {
     width: 6rem;
     margin-bottom: 1rem;
   }
+
   .progress.animate .prog1 {
     left: 0%;
     transform: translateX(287px);
     transition: 1s;
   }
+
   .progress.animate .prog2 {
     left: 0%;
     transform: translateX(280px);
     transition: 1.5s;
   }
+
   .progress.animate .prog3 {
     left: 0%;
     transform: translateX(272px);
@@ -1171,11 +1188,13 @@ body {
     margin-top: -116px;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .curved-main {
     transform: translate(-97px, 95px);
     max-width: 107%;
   }
+
   .footerimg {
     transform: translate(-81px, -100px);
     max-width: 106%;
@@ -1203,12 +1222,15 @@ body {
 
   transition: opacity 0.2s, visibility 0.2s;
 }
+
 .teams-desc p {
   text-align: center;
 }
+
 .teams-desc p a {
   color: white;
 }
+
 .teams:hover .teams-desc {
   visibility: visible;
   opacity: 0.8;
