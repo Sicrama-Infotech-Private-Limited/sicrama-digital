@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+.carousel-card {
+  max-width: 90%;
+}
+
 
 .labelCard:hover {
   font-weight: bolder;
@@ -7,6 +11,12 @@
 
 .card-link:hover {
   font-weight: bolder;
+
+}
+
+.card-link {
+  color: white;
+
 }
 
 .blog-btn {
@@ -27,9 +37,7 @@
   margin: auto;
 }
 
-p {
-  text-align: justify;
-}
+
 
 ol>li,
 .policy ul>li,
@@ -408,6 +416,10 @@ body {
 
 .main-card a {
   color: white;
+}
+
+.main-card:hover {
+  color: #004080;
 }
 
 .main-card:hover a {
@@ -1126,12 +1138,29 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1136px) {
+
+
+
   .mainimg img {
     position: absolute;
     top: -1rem;
     left: -1.5rem;
     max-width: 112%;
     animation: float 5s ease-in-out infinite;
+  }
+
+  .img-home1 {
+    margin-left: 38px;
+  }
+
+  .input-group-text {
+    border-radius: 20px;
+    transform: translateX(-8px);
+  }
+
+  .img1-abt {
+    max-width: 130%;
+    margin-left: -56px;
   }
 
   .circle2 {
@@ -1184,7 +1213,7 @@ body {
     margin-top: -160px;
     max-width: 200%;
     margin-bottom: 106px;
-    margin-left: -147px;
+    margin-left: -142px;
     margin-top: -116px;
   }
 }

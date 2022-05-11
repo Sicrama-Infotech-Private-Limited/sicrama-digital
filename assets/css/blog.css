@@ -33,6 +33,7 @@
 .small-blog {
   margin-bottom: 1rem;
 }
+
 .expand[aria-expanded="true"] {
   display: none !important;
 }
@@ -40,7 +41,7 @@
 @media screen and (min-width: 768px) and (max-width: 1136px) {
   .small-blog1 {
     margin-left: 3rem;
-    margin-top: -72px;
+    margin-top: -50px;
     color: #004080;
     font-weight: bold;
   }
