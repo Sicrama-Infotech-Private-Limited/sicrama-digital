@@ -1140,6 +1140,9 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1136px) {
 
 
+  .widget-area .widget {
+    padding: 35px 15px;
+  }
 
   .mainimg img {
     position: absolute;
