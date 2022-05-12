@@ -1,5 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+.teams {
+  position: relative;
+}
+
+.teams-desc {
+  position: absolute;
+  top: 1.9rem;
+  bottom: 0;
+  left: 2.36rem;
+  right: 0;
+  background: #e53e8e;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 50%;
+  height: 80%;
+  width: 75%;
+  padding-top: 7rem;
+
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.teams-desc p {
+  text-align: center;
+}
+
+.teams-desc p a {
+  color: white;
+}
+
+.teams:hover .teams-desc {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.ani {
+  transition: all .3s ease-out;
+}
+
+.link2:hover .ani {
+  font-size: 2rem !important;
+}
+
+.link2 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
 .carousel-card {
   max-width: 90%;
 }
@@ -1139,6 +1187,28 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1136px) {
 
+  .teams-desc {
+    position: absolute;
+    top: 0.9rem;
+    bottom: 0;
+    left: 1.36rem;
+    right: 0;
+    background: #e53e8e;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 50%;
+    height: 80%;
+    width: 75%;
+    padding-top: 7rem;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+
+  .emailimg img {
+    max-width: 100%;
+    margin-bottom: 190px;
+    margin-left: 30px;
+  }
 
   .widget-area .widget {
     padding: 35px 15px;
@@ -1221,61 +1291,17 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .curved-main {
-    transform: translate(-97px, 95px);
-    max-width: 107%;
-  }
 
-  .footerimg {
-    transform: translate(-81px, -100px);
-    max-width: 106%;
-  }
-}
 
-.teams {
-  position: relative;
-}
-
-.teams-desc {
-  position: absolute;
-  top: 1.9rem;
-  bottom: 0;
-  left: 2.36rem;
-  right: 0;
-  background: #e53e8e;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  border-radius: 50%;
-  height: 80%;
-  width: 75%;
-  padding-top: 7rem;
-
-  transition: opacity 0.2s, visibility 0.2s;
-}
-
-.teams-desc p {
-  text-align: center;
-}
-
-.teams-desc p a {
-  color: white;
-}
-
-.teams:hover .teams-desc {
-  visibility: visible;
-  opacity: 0.8;
-}
 
 @media screen and (min-width: 1600px) {
   .curved-main {
-    transform: translate(-97px, 95px);
-    max-width: 107%;
+    transform: translate(-152px, 95px);
+    max-width: 109%;
   }
 
   .footerimg {
-    transform: translate(-81px, -100px);
-    max-width: 106%;
+    transform: translate(-130px, -100px);
+    max-width: 108%;
   }
 }
