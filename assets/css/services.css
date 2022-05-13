@@ -97,4 +97,9 @@
     margin-left: none !important;
     margin-right: none !important;
   }
+
+  .service-card:hover .white {
+    display: block;
+    margin-left: 2.5rem;
+  }
 }
