@@ -16,11 +16,13 @@
   background-position: bottom 40px right 144px;
   height: 90%;
 }
+
 .contact-card:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   transform: translateY(-5px);
 }
+
 @media only screen and (max-width: 600px) {
   .office {
     margin-top: 1rem;
@@ -31,5 +33,26 @@
 @media screen and (max-width: 600px) {
   .office {
     margin-top: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1136px) {
+  .contact-loc {
+    margin-left: -92px;
+  }
+
+  .contact-alarm {
+    margin-left: -85px;
+  }
+
+  .contact-call {
+    margin-left: -89px;
+  }
+
+  .contact-card {
+
+    background-position: bottom 90px right 85px;
+
   }
 }
