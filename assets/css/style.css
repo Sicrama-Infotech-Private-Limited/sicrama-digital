@@ -225,6 +225,22 @@ body {
   color: white;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn-outline-nodanger {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-nodanger:hover {
+  color: #fff;
+  background-image: linear-gradient(#e53e8e, #292391);
+  border-color: #e53e8e;
+}
+
 .logoblue {
   display: none;
 }
